@@ -1,7 +1,7 @@
 {
-  "name": "DevBasicSkills2019-16",
+  "name": "devbasicskills2019-16",
   "version": "1.0.0",
-  "description": "Personal portfolio",
+  "description": "Project Work in Developer Basic Skills Course DIN19SP",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css",
@@ -13,23 +13,23 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
-    "type": "",
+    "type": "git",
     "url": ""
   },
-  "author": "Venla Jokikokko",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": ""
   },
   "homepage": "",
   "devDependencies": {
-    "node-sass": "^4.13.0"
-  },
-  "dependencies": {
     "auto-prefixer": "0.4.2",
     "concat": "^1.0.3",
     "sass": "^1.23.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0"
   }
 }
