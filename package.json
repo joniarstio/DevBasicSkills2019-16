@@ -1,5 +1,5 @@
 {
-  "name": "arctic-archives",
+  "name": "DevBasicSkills2019-16",
   "version": "1.0.0",
   "description": "Personal portfolio",
   "main": "index.js",
@@ -13,15 +13,15 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/venlahelena/arctic-archives.git"
+    "type": "",
+    "url": ""
   },
   "author": "Venla Jokikokko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/venlahelena/arctic-archives/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/venlahelena/arctic-archives#readme",
+  "homepage": "",
   "devDependencies": {
     "node-sass": "^4.13.0"
   },
