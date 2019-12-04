@@ -64,6 +64,38 @@
               Col 3 of 4
           </div>
       </div>
-    
+      <div>
+            Insert decimal number:<br>
+            <input type="text" placeholder="To binary" id="input1" /><br>
+            <button onclick="dec_to_bin()">Calculate</button>
+      </div>
+      <div>
+            Insert decimal number:<br>
+            <input type="text" placeholder="To octal" id="input2" /><br>
+            <button onclick="dec_to_oct()">Calculate</button>
+      </div>
+      <div>
+            Insert decimal number:<br>
+            <input type="text" placeholder="to hexadecimal" id="input3" /><br>
+            <button onclick="dec_to_hex()">Calculate</button>
+      </div>    
+
+      <script>
+        function dec_to_bin() {
+        var decConvert = Number(document.getElementById('input1').value).toString(2);
+        alert("Result is: " + decConvert);
+}
+
+        function dec_to_oct() {
+        var decConvert = Number(document.getElementById('input2').value).toString(8);
+        alert("Result is: " + decConvert);
+}
+
+        function dec_to_hex() {
+        var decConvert = Number(document.getElementById('input3').value).toString(16);
+        alert("Result is: " + decConvert);
+}
+      </script>
+
   </body>
 </html>
