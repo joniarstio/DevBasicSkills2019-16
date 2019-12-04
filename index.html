@@ -66,34 +66,84 @@
       </div>
       <div>
             Insert decimal number:<br>
-            <input type="text" placeholder="To binary" id="input1" /><br>
-            <button onclick="dec_to_bin()">Calculate</button>
+              <input type="text" placeholder="To binary" id="input1" /><br>
+                <button onclick="dec_to_bin()">Calculate</button><br><br>
       </div>
       <div>
             Insert decimal number:<br>
-            <input type="text" placeholder="To octal" id="input2" /><br>
-            <button onclick="dec_to_oct()">Calculate</button>
+              <input type="text" placeholder="To octal" id="input2" /><br>
+                <button onclick="dec_to_oct()">Calculate</button><br><br>
       </div>
       <div>
             Insert decimal number:<br>
-            <input type="text" placeholder="to hexadecimal" id="input3" /><br>
-            <button onclick="dec_to_hex()">Calculate</button>
-      </div>    
+              <input type="text" placeholder="to hexadecimal" id="input3" /><br>
+                <button onclick="dec_to_hex()">Calculate</button><br><br>
+      </div> 
+      <div>
+            Insert binary number:<br>
+              <input type="text" placeholder="to decimal" id="input4" /><br>
+                <button onclick="bin_to_dec()">Calculate</button><br><br>
+      </div>
+      <div>
+            Insert binary number:<br>
+              <input type="text" placeholder="to octal" id="input5" /><br>
+                <button onclick="bin_to_oct()">Calculate</button><br><br>
+      </div>
+      <div>
+            Insert binary number:<br>
+              <input type="text" placeholder="to hexadecimal" id="input6" /><br>
+                <button onclick="bin_to_hex()">Calculate</button><br><br>
+      </div>
+      <div>
+            Insert hexadecimal number:<br>
+              <input type="text" placeholder="to decimal" id="input7" /><br>
+                <button onclick="hex_to_dec()">Calculate</button><br><br>
+      </div>     
+      <div>
+            Insert octal number:<br>
+              <input type="text" placeholder="to decimal" id="input8" /><br>
+                <button onclick="oct_to_dec()">Calculate</button><br><br>
+      </div>     
 
       <script>
         function dec_to_bin() {
-        var decConvert = Number(document.getElementById('input1').value).toString(2);
-        alert("Result is: " + decConvert);
+            var decConvert = Number(document.getElementById('input1').value).toString(2);
+            alert("Result is: " + decConvert);
 }
 
         function dec_to_oct() {
-        var decConvert = Number(document.getElementById('input2').value).toString(8);
-        alert("Result is: " + decConvert);
+            var decConvert = Number(document.getElementById('input2').value).toString(8);
+            alert("Result is: " + decConvert);
 }
 
         function dec_to_hex() {
-        var decConvert = Number(document.getElementById('input3').value).toString(16);
-        alert("Result is: " + decConvert);
+            var decConvert = Number(document.getElementById('input3').value).toString(16);
+            alert("Result is: " + decConvert);
+}
+
+        function bin_to_dec() {
+            var binConvert = Number(document.getElementById('input4').value);
+            alert("Result is: " + parseInt(binConvert, 2));
+}
+
+        function bin_to_oct() {
+            var binConvert = Number(document.getElementById('input5').value);
+            alert("Result is: " + parseInt(binConvert, 2).toString(8));
+}
+
+        function bin_to_hex() {
+            var binConvert = Number(document.getElementById('input6').value);
+            alert("Result is: " + parseInt(binConvert, 2).toString(16));
+}
+
+        function hex_to_dec() {
+            var hexConvert = Number(document.getElementById('input7').value);
+            alert("Result is: " + parseInt(hexConvert, 16));
+}
+
+        function oct_to_dec() {
+            var hexConvert = Number(document.getElementById('input8').value);
+            alert("Result is: " + parseInt(hexConvert, 8));
 }
       </script>
 
