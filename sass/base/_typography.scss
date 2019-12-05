@@ -2,6 +2,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.7;
+    padding-bottom: 20rem;
     
 }
 
@@ -9,16 +10,17 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 8rem;
+    color: $color-dark-blue;
+
 
     &--main {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3rem;
+        letter-spacing: 2.5rem;
         margin-bottom: 2rem;
         animation: moveInBottom 3s ease-out;
     
-        
     }
     
     &--sub {
@@ -27,6 +29,21 @@ body {
         font-weight: 700;
         letter-spacing: 1.75rem;
         animation: moveInBottom 5s ease-out;
+        padding-bottom: 2.5rem;
 
         }
-    }
+     }
+  
+
+    .heading-secondary {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: inline-block;
+        letter-spacing: .2rem;
+        padding-top: 20rem;
+        color: $color-dark-blue;
+
+
+      }
+    
