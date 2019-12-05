@@ -1,8 +1,11 @@
 .card {
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
-    background-color: $color-blue;
+    background-color: $color-baby-blue;
+    height: 50rem;
+    transition: .3s all;
 
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
     }
+  }
     
