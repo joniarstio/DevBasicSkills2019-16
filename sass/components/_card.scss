@@ -1,11 +1,85 @@
 .card {
-    background-color: $color-baby-blue;
-    height: 50rem;
-    transition: .3s all;
+
+    //Functionality
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 34rem;
+    background-color: $color-white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    transition: all .4s ease-out;
+    
 
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        transform: translateY(-8px);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        
+
+    }
+
+
+    &__picture {
+        background-size: cover;
+        height: 100%;
+
+        
+      &--1 {
     }
   }
-    
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 550;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 12rem;
+    text-align: center;
+
+   }
+   
+   &__heading-span {
+       padding: 1rem 1.5rem;
+       -webkit-box-decoration-break: clone;
+       box-decoration-break: clone;
+
+    &--1 {
+        color:$color-yellow;
+        
+    }
+
+    &--2 {
+       color: $color-pink;
+
+   }
+    &--3 {
+        color: $color-light-purple;
+        padding-left: 4rem;
+
+    }
+
+    &--4 {
+        color: $color-orange;
+        padding-left: 5.5rem;
+
+    }
+
+    &--5 {
+        color: $color-purple;
+        padding-left: 3.5rem;
+
+    }
+
+    &--6 {
+        color: $color-dark-blue;
+        padding-left: 9rem;
+
+    }
+  }
+}

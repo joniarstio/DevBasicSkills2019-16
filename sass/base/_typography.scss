@@ -19,7 +19,7 @@ body {
         font-weight: 400;
         letter-spacing: 2rem;
         margin-bottom: 2.5rem;
-        animation: moveInBottom 3s ease-out;
+        animation: moveInBottom 2s ease-out;
     
     }
     
@@ -28,7 +28,7 @@ body {
         font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.75rem;
-        animation: moveInBottom 4s ease-out;
+        animation: moveInBottom 3s ease-out;
         padding-bottom: 2.5rem;
 
         }
@@ -38,12 +38,11 @@ body {
     .heading-secondary {
         font-size: 3.5rem;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 600;
         display: inline-block;
         letter-spacing: .2rem;
-        padding-top: 20rem;
+        padding-top: 15rem;
         color: $color-dark-blue;
-
 
       }
     
