@@ -111,50 +111,50 @@
       <div>
             Insert decimal number:<br>
               <input type="text" placeholder="To binary" id="input1" />
-                <button onclick="dec_to_bin()">Calculate</button>
-                  <p id="binPrint1"></p>
+                <button id="enterkey" onclick="dec_to_bin();">Calculate</button>
+                  <p id="result1"></p>
       </div>
       <div>
             Insert decimal number:<br>
               <input type="text" placeholder="To octal" id="input2" />
                 <button onclick="dec_to_oct()">Calculate</button>
-                  <p id="binPrint2"></p>
+                  <p id="result2"></p>
       </div>
       <div>
             Insert decimal number:<br>
               <input type="text" placeholder="to hexadecimal" id="input3" />
                 <button onclick="dec_to_hex()">Calculate</button>
-                  <p id="binPrint3"></p>
+                  <p id="result3"></p>
       </div> 
       <div>
             Insert binary number:<br>
               <input type="text" placeholder="to decimal" id="input4" />
                 <button onclick="bin_to_dec()">Calculate</button>
-                  <p id="binPrint4"></p>
+                  <p id="result4"></p>
       </div>
       <div>
             Insert binary number:<br>
               <input type="text" placeholder="to octal" id="input5" />
                 <button onclick="bin_to_oct()">Calculate</button>
-                  <p id="binPrint5"></p>
+                  <p id="result5"></p>
       </div>
       <div>
             Insert binary number:<br>
               <input type="text" placeholder="to hexadecimal" id="input6" />
                 <button onclick="bin_to_hex()">Calculate</button>
-                  <p id="binPrint6"></p>
+                  <p id="result6"></p>
       </div>
       <div>
             Insert hexadecimal number:<br>
               <input type="text" placeholder="to decimal" id="input7" />
                 <button onclick="hex_to_dec()">Calculate</button>
-                  <p id="binPrint7"></p>
+                  <p id="result7"></p>
       </div>     
       <div>
             Insert octal number:<br>
               <input type="text" placeholder="to decimal" id="input8" />
                 <button onclick="oct_to_dec()">Calculate</button>
-                  <p id="binPrint8"></p>
+                  <p id="result8"></p>
       </div>  
       
       <h1>Display Tables of DEC, BIN, OCT and HEX.</h1>
@@ -164,7 +164,7 @@
         <p><input type="button" value="Print OCT" onclick='printOCT()'/>
         <p><input type="button" value="Print HEX" onclick='printHEX()'/>
         <p><input type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
-        <p><input type="button" value="Hide table" onclick="hideTable()">
+        <p><input type="button" value="Hide/show table" onclick="hideTable()">
     
         <div id="table">
 
