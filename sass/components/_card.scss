@@ -17,29 +17,38 @@
     
 
     &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-        
-
-    }
+        transform: translateY(-1.5px);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15); 
+}
 
 
-    &__picture {
-        background-size: cover;
-        height: 100%;
 
-        
+  &__icon {
+      content: " ";
+      display: block;
+      width: 100%;
+      text-align: center;
+      height: 7rem;
+      width: 7rem;
+      
+
       &--1 {
-    }
-  }
+        fill: $color-yellow;
+
+      
+        
+    }  
+ }
+  
 
   &__heading {
-    font-size: 2.8rem;
+    display: inline-block;
+    font-size: 2.6rem;
     font-weight: 550;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
+    padding-top: 6rem;
     text-transform: uppercase;
     position: absolute;
-    padding-top: 12rem;
     text-align: center;
 
    }
@@ -50,7 +59,7 @@
        box-decoration-break: clone;
 
     &--1 {
-        color:$color-yellow;
+        color:$color-yellow;   
         
     }
 
@@ -61,25 +70,22 @@
     &--3 {
         color: $color-light-purple;
         padding-left: 4rem;
-
     }
 
     &--4 {
         color: $color-orange;
-        padding-left: 5.5rem;
-
+       padding-left: 6rem;
     }
 
     &--5 {
         color: $color-purple;
-        padding-left: 3.5rem;
+        padding-left: 5rem;
 
     }
 
     &--6 {
         color: $color-dark-blue;
-        padding-left: 9rem;
-
+        padding-left: 8rem;
     }
   }
 }

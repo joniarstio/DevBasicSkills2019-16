@@ -3,10 +3,10 @@
    &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 3.5rem;
     display: inline-block;
     transition: all .2s;
-    border-radius: .2rem;
+    border-radius: .3rem;
     position: relative;
     font-size: 1.8rem;
  }
@@ -39,6 +39,7 @@
     &::after {
       content: "";
       display: inline-block;
+      border-radius: .3rem;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -48,7 +49,7 @@
       transition: all .4s;
  }
     &--animated {
-      animation: moveInBottom .5s ease-out .75s;
+      animation: moveInBottom .6s ease-out .75s;
       animation-fill-mode: backwards;
  }
 } 

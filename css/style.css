@@ -81,10 +81,10 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3.5rem;
   display: inline-block;
   transition: all .2s;
-  border-radius: .2rem;
+  border-radius: .3rem;
   position: relative;
   font-size: 1.8rem; }
 
@@ -108,6 +108,7 @@ body {
 .btn::after {
   content: "";
   display: inline-block;
+  border-radius: .3rem;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -117,7 +118,7 @@ body {
   transition: all .4s; }
 
 .btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom .6s ease-out .75s;
   animation-fill-mode: backwards; }
 
 .card {
@@ -134,18 +135,25 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transition: all .4s ease-out; }
   .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-1.5px);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .card__picture {
-    background-size: cover;
-    height: 100%; }
+  .card__icon {
+    content: " ";
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 7rem;
+    width: 7rem; }
+    .card__icon--1 {
+      fill: #FFC76E; }
   .card__heading {
-    font-size: 2.8rem;
+    display: inline-block;
+    font-size: 2.6rem;
     font-weight: 550;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
+    padding-top: 6rem;
     text-transform: uppercase;
     position: absolute;
-    padding-top: 12rem;
     text-align: center; }
   .card__heading-span {
     padding: 1rem 1.5rem;
@@ -160,13 +168,13 @@ body {
       padding-left: 4rem; }
     .card__heading-span--4 {
       color: #E88C64;
-      padding-left: 5.5rem; }
+      padding-left: 6rem; }
     .card__heading-span--5 {
       color: #8B63FF;
-      padding-left: 3.5rem; }
+      padding-left: 5rem; }
     .card__heading-span--6 {
       color: #253840;
-      padding-left: 9rem; }
+      padding-left: 8rem; }
 
 .row {
   max-width: 114rem;
