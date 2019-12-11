@@ -7,8 +7,6 @@
     position: relative;
     height: 34rem;
     background-color: $color-white;
-    top: 0;
-    left: 0;
     width: 100%;
     backface-visibility: hidden;
     border-radius: .3rem;
@@ -34,7 +32,7 @@
 
       &--1 {
         fill: $color-yellow;
-
+        
       
         
     }  
