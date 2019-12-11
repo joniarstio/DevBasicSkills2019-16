@@ -3,13 +3,17 @@
    &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 3rem;
     display: inline-block;
     transition: all .2s;
     border-radius: .3rem;
     position: relative;
     font-size: 1.8rem;
  }
+
+   &--enter {
+   background-color: $color-blue;
+   color: $color-white;
 
     &:hover {
       transform: translateY(-3px);
@@ -25,17 +29,12 @@
       transform: translateY(-1px);
       box-shadow: 0 .5rem 1rem rgba($color-black,.2);
  }
-
-    &--enter {
-      background-color: $color-blue;
-      color: $color-white;
-
  
     &::after {
       background-color: $color-blue;
       
      }
- }
+ }  
     &::after {
       content: "";
       display: inline-block;
@@ -52,4 +51,30 @@
       animation: moveInBottom .6s ease-out .75s;
       animation-fill-mode: backwards;
  }
+
+ &__popup  {
+  background-color: $color-grey-middle;
+  display: inline-block;
+  color: $color-white;
+  font-size: 1.7rem;
+  position: relative;
+  text-transform: uppercase;
+  padding: .5rem 1.2rem;
+  border-radius: .4rem;
+  text-decoration: none;
+  transition: all .4s;
+  
+
+  &:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+}
+
+&:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba($color-black,.2); 
+  }
+ }
 } 
+
+ 

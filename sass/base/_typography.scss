@@ -9,7 +9,7 @@ body {
 .heading-primary {
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 8rem;
+    margin-bottom: 4.5rem;
     color: $color-dark-blue;
 
 
@@ -29,7 +29,7 @@ body {
         font-weight: 700;
         letter-spacing: 1.75rem;
         animation: moveInBottom 3s ease-out;
-        padding-bottom: 2.5rem;
+        padding-bottom: 1rem;
 
         }
      }
@@ -45,4 +45,3 @@ body {
         color: $color-dark-blue;
 
       }
-    
