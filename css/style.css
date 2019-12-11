@@ -163,6 +163,7 @@ body {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); }
   .card__cta {
     position: absolute;
+    text-align: center;
     width: 100%;
     top: 50%;
     left: 50%;
@@ -212,7 +213,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: .5rem;
     font-weight: 750rem;
-    margin-top: 3rem; }
+    margin-top: 3.5rem; }
   .card__heading-three {
     color: #E88C64;
     text-transform: uppercase;
@@ -220,7 +221,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: .5rem;
     font-weight: 750rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     padding-bottom: 1rem; }
   .card__heading-four {
     color: #D764E8;
