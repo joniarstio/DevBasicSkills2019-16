@@ -335,6 +335,7 @@
 
         </div>
       </div>
+<<<<<<< HEAD
 
     -->
 
@@ -345,4 +346,62 @@
 
               </body>
 
+=======
+      <div>
+            Insert hexadecimal number:<br>
+              <input type="text" placeholder="to decimal" id="input7" />
+                <button onclick="hex_to_dec()">Calculate</button>
+                  <p id="result7"></p>
+      </div>     
+      <div>
+            Insert octal number:<br>
+              <input type="text" placeholder="to decimal" id="input8" />
+                <button onclick="oct_to_dec()">Calculate</button>
+                  <p id="result8"></p>
+      </div>  
+      
+      <h2 class="heading-secondary">Display Tables of DEC, BIN, OCT and HEX.</h2>
+               
+        <p><input type="button" value="Print DEC" onclick='printDEC()'/>
+              <input type="button" value="Print BIN" onclick='printBIN()'/>
+                <input type="button" value="Print OCT" onclick='printOCT()'/>
+                  <input type="button" value="Print HEX" onclick='printHEX()'/>
+                    <input type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
+                      <input type="button" value="Hide/show table" onclick="hideTable()"></p>
+                        <input type="reset" value="Reset" name="tablesReset" onclick="resetTable()">
+        <div id="table">
+
+        <p id="decPrint"></p>
+        <p id="binPrint"></p>
+        <p id="octPrint"></p>
+        <p id="hexPrint"></p>
+        <p id="allPrint"></p>
+        
+    </div>
+
+    <form>
+        <h2 class="heading-secondary">Random Number Generator</h2>
+          <p>How many numbers: <input type="text" id="qtyNumbers" name="qtyNumbers" value="1"> from 
+            <input type="text" id="minNumber" name="minNumber" value="1"> to 
+              <input type="text" id="maxNumber" name="maxNumber" value="10"></p>
+                <p><textarea id="resultNumber" name="resultNumber" rows="10" cols="20"></textarea></p>
+                  <p><input type="button" id="calculateBtn" name="calculateBtn" value="Generate Random Number">
+                    <input type="button" name="resetBtn" id="resetBtn" value="Reset"></p>
+        
+          <p>Options:</p>
+            <p><input name="optionsSelect" class="optionsSelect" id="optionsSel" value="optionsSel" checked="checked" type="radio"> Individual rows
+              <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="," type="radio"> Separated by a comma
+                <input name="optionsSelect" class="optionsSelect" id="optionsSel" value=" " type="radio"> Separated by a space</p>
+      </form>
+      
+
+      <p>C(n,r):</p>
+        <input type="text" placeholder="n" id="n" /> 
+          <input type="text" placeholder="r" id="r" /> 
+            <button id="calculate">Calculate</button>
+              <p id="result">Result:</p>
+              
+    <script src="calculations.js"></script>
+  </body>
+>>>>>>> b7e34947d8f1e2e36be0482b50926466cc2aeeab
 </html>
