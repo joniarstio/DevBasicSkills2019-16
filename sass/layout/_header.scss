@@ -4,6 +4,7 @@
     background-position: top;
     position: relative;
     background-color: $color-grey;
+    backface-visibility: hidden;
 
 
    &__text-box {

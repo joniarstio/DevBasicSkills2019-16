@@ -3,29 +3,27 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 32rem;
+    width: 100%; 
     top: 0;
     left: 0;
-    width: 100%;
     border-radius: .3rem;
     background-color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
     transition: all .4s ease-out;
 
     &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 1.5rem 3rem rgba($color-black, .15); 
-}
+        transform: translateY(-3px);
+        box-shadow: 0 1.5rem 3rem rgba($color-black, .15);
+    }
 
- 
-   &__cta {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-   }
+    &__cta {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        @include absCenter;
+
+    }
 
 
     &__icon-one {
@@ -33,21 +31,22 @@
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 30%);
-    }    
-    
+    }
+
     &__icon-two {
         fill: $color-purple;
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 25%);
-        
+
     }
+
     &__icon-three {
         fill: $color-orange;
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 25%);
-        
+
     }
 
     &__icon-four {
@@ -55,7 +54,7 @@
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 30%);
-        
+
     }
 
     &__icon-five {
@@ -63,7 +62,7 @@
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 25%);
-        
+
     }
 
     &__icon-six {
@@ -71,18 +70,18 @@
         height: 10rem;
         width: 10rem;
         transform: translate(120%, 25%);
-        
+
     }
 
 
     &__heading-one {
-        color:$color-yellow;
+        color: $color-yellow;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: .5rem;
         font-size: 2.5rem;
         font-weight: 750rem;
-        margin-top: 2.8rem;   
+        margin-top: 2.8rem;
     }
 
     &__heading-two {
@@ -92,7 +91,7 @@
         font-size: 2.5rem;
         letter-spacing: .5rem;
         font-weight: 750rem;
-        margin-top: 3.5rem;   
+        margin-top: 3.5rem;
     }
 
     &__heading-three {
@@ -103,7 +102,7 @@
         letter-spacing: .5rem;
         font-weight: 750rem;
         margin-top: 3rem;
-        padding-bottom: 1rem;   
+        padding-bottom: 1rem;
     }
 
     &__heading-four {
@@ -114,7 +113,7 @@
         letter-spacing: .5rem;
         font-weight: 750rem;
         margin-top: 2.5rem;
-        padding-bottom: 1rem;   
+        padding-bottom: 1rem;
     }
 
     &__heading-five {
@@ -125,7 +124,7 @@
         letter-spacing: .5rem;
         font-weight: 750rem;
         margin-top: 2.5rem;
-        padding-bottom: 1rem;   
+        padding-bottom: 1rem;
     }
 
     &__heading-six {
@@ -136,6 +135,6 @@
         letter-spacing: .5rem;
         font-weight: 750rem;
         margin-top: 2.5rem;
-        padding-bottom: 1rem;   
+        padding-bottom: 1rem;
     }
 }
