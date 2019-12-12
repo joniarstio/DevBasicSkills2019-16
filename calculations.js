@@ -104,6 +104,11 @@ function printHEX(){
     }
 }
 
+//Function to reset table
+function resetTable() {
+    document.getElementById("table").innerHTML = "";
+}
+
 // Random number generator
 document.addEventListener('DOMContentLoaded', function (){	
 
