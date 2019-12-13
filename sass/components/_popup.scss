@@ -1,20 +1,33 @@
-.popup {
- height: 100vh;
- width: 100%;
- position: fixed;
- top: 0;
- left: 0;
- background-color: rgba($color-black, .8);
- z-index: 999;
- opacity: 0;
- visibility: hidden;
- transition: all .3s;
+//POPUP = NUMBER SYSTEM CONVERSION
+//POPUPTWO = COMBINATORICS
+//POPUPTHREE = NUMBER SYSTEM OUTPUTS
+//POPUPFOUR = TRUTH TABELS
+//POPUPFIVE = RANDOM VALUES
+//POPUPSIX = CURRENCY EXCHANGE
+
+.popup,
+.popuptwo,
+.popupthree,
+.popupfour,
+.popupfive,
+.popupsix {
+
+     height: 100vh;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: rgba($color-black, .8);
+     z-index: 999;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s;
 
 
     &__content {
       @include absCenter;  
       width: 85%;
-      height: 75rem;
+      height: 75%;
       background-color: $color-white;
       box-shadow: 0 2rem 4rem rgba($color-black, .2);
       border-radius: .5rem;
@@ -43,7 +56,7 @@
     }
 
     &__text {
-        font-size: 2.2rem;
+        font-size: 2rem;
         padding: 5rem 5rem;
 
     }
@@ -76,5 +89,6 @@
           &:hover {
               color: $color-dark-blue;
           }
-      } 
-}
+       } 
+    } 
+      

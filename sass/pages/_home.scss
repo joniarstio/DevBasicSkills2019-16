@@ -4,7 +4,17 @@
 }
 .section-math {
     padding: 25rem 0;
-    background-color: $color-grey;
+    background-color: $color-grey;     
+}
+
+.footer {
+        background-color: $color-dark-blue;
+        padding: 17rem 0;
     
-     
+      &__copyright {
+          color: $color-grey;
+          font-size: 1.6rem;
+          text-align: center;
+         letter-spacing: .3rem;
+  }  
 }

@@ -67,3 +67,13 @@ body {
         color: $color-dark-blue;
 
     }
+
+    .p {
+      
+      &__result {
+          display: inline-block;
+          font-size: 2rem;
+          padding-left: 5rem;
+      }
+
+    }
