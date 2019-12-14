@@ -136,7 +136,7 @@ document.getElementById("calculateBtn").addEventListener("click", function (){
         var randomNumber;
         var randoms = "";
             for (var i = 0; i < qty;){
-                 randomNumber = (Math.random() * (max - min + 1)) << 0;
+                 randomNumber = Math.floor(Math.random() * (+max - +min) + +min);
                     if(i + 1 == qty){
                        randoms = randoms + randomNumber; 
                     }	
