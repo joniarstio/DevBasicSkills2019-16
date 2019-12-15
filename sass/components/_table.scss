@@ -1,0 +1,10 @@
+.table {
+   
+  
+    &__output {
+        display: table-cell;
+        column-count: 8;
+        font-size: 1rem;
+        color: $color-dark-blue;
+    }   
+}

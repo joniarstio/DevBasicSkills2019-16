@@ -39,7 +39,7 @@ function bin_to_oct() {
 function bin_to_hex() {
     var binConvert = Number(document.getElementById('input6').value);
     var result = document.getElementById('result6');
-        result.innerHTML += (parseInt(binConvert, 2).toString(16));
+        result.innerHTML = (parseInt(binConvert, 2).toString(16));
 }
 
 // Converter from hexadecimal to decimal

@@ -37,7 +37,7 @@
               </svg>
               <p class="card__heading-one"> Number system conversion</p>
             </div>
-            <div class="u-center-text u-padding-top-medium">
+            <div class="u-center-text u-padding-top-small">
               <a href="#popup" class="btn__popup">Calculate</a>
             </div>
           </div>
@@ -107,9 +107,9 @@
               <svg class="card__icon-six">
                 <use xlink:href="images/sprite.svg#icon-number"></use>
               </svg>
-              <p class="card__heading-six">Uknown</p>
+              <p class="card__heading-six">Currency Converter</p>
             </div>
-            <div class="u-center-text u-padding-top-big">
+            <div class="u-center-text u-padding-top-small">
               <a href="#popup-six" class="btn__popup">Calculate</a>
             </div>
           </div>
@@ -118,271 +118,322 @@
   </main>
 
   <footer class="footer">
-      <div class="footer__copyright">
-        <p>&copy; Created by Joni Arstio & Venla Jokikokko<p>
-      </div>
+    <div class="footer__copyright">
+      <p>&copy; Created by Joni Arstio & Venla Jokikokko<p>
+    </div>
   </footer>
 
-
-    <section>
-      <div class="popup" id="popup">
-         <div class="popup__content">
-           <h3 class="heading-tertiary">Number system conversions of DEC, BIN, OCT and HEX</h3>
-            <div class="popup__left">
-               <p class="popup__text">
-            This mathematical tool does numbering system conversions. The numbering systems that this tool helps to converts are:   Binary numbers, Ocatl numbers, Decimal numbers, and Hexadeciaml numbers.
+  <!-- Pop up for number system conversion-->
+  <section>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <h3 class="heading-tertiary">Number system conversions of DEC, BIN, OCT and HEX</h3>
+        <div class="popup__left">
+          <p class="popup__text">
+            This mathematical tool does numbering system conversions. The numbering systems that this tool helps to
+            converts are: Binary numbers, Ocatl numbers, Decimal numbers, and Hexadeciaml numbers.
           </p>
         </div>
-       
+
 
         <div class="popup__right">
           <a href="#section-selector" class="popup__close">&times;</a>
 
-           <div class="converter">
-              <div class="converter__form">
+          <div class="converter">
+            <div class="converter__form">
 
-                <h4 class="heading-quatenary">Insert decimal number</h4>
-                   <form action="#" class="from">
-                      <div class="form__group">
-                        <input type="text" class="form__input" placeholder="To binary" id="input1"/>
-                        <p class="p__result" id="result1"></p>
-                         </form>
-                        </div>
-                        <div class="u-padding-top-small">
-                        <btn class="btn__calculate" id="enterkey" onclick="dec_to_bin()">Calculate</btn>     
-                    </div>
-                  </div>
-               
-            
-             <div class="converter__form">
               <h4 class="heading-quatenary">Insert decimal number</h4>
-                <form action="#" class="from">
-                   <div class="form__group">
-                     <input type="text" class="form__input" placeholder="To octal" id="input2"/>
-                     <p class="p__result" id="result2"></p>
-                      </form>
-                    <div class="u-padding-top-small"> 
-                    <btn class="btn__calculate" onclick="dec_to_oct()">Calculate</btn>
-                  </div>
-              </div>
-           </div>  
-            
-           <div class="converter__form">
-            <h4 class="heading-quatenary">Insert decimal number</h4>
-                <form action="#" class="form">
-                   <div class="form__group">
-                     <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required/>
-                     <p class="p__result" id="result3"></p>
-                      </form>
-                     <div class="u-padding-top-small">
-                    <btn class="btn__calculate" onclick="dec_to_hex()">Calculate</btn>
-                    <div>
-               </div>
-             </div> 
-        
-          <div class="converter__form"> 
-            <h4 class="heading-quatenary">Insert binary number</h4>
-               <form action="#" class="form">
+              <form class="from">
                 <div class="form__group">
-                    <input type="text" class="form__input" placeholder="to decimal" id="input4" />
-                    <p class="p__result" id="result4"></p>
-                 </form>
-                  <div class="u-padding-top-small">
-                   <btn class="btn__calculate" onclick="bin_to_dec()">Calculate</btn>
-                 </div> 
-             </div>
-           </div>  
-    
-           <div class="converter__form">
-            <h4 class="heading-quatenary">Insert binary number</h4>
-                <form action="#" class="form">
-                  <div class="form__group">
-                   <input type="text" class="form__input" placeholder="to octal" id="input5" />
-                   <p class="p__result" id="result5"></p>
-                 </form>
-                 <div class="u-padding-top-small">
-                   <btn class="btn__calculate" onclick="bin_to_oct()">Calculate</btn>
-                </div> 
-                
-               </div>
-             </div> 
-           
-           <div class="converter__form">
-              <h4 class="heading-quatenary">Insert binary number</h4>
-                 <form action="#" class="form">
-                   <div class="form__group">
-                     <input type="text" class="form__input" placeholder="to hexadecimal" id="input6" />
-                     <p class="p__result" id="result6"></p>
-                     </form>
-                   </div>
-                    <div class="u-padding-top-small">   
-                   <btn class="btn__calculate" onclick="bin_to_hex()">Calculate</btn>
-                 </div>
-              </div>
-           </div>
-      
-          <div class="converter__form">
-            <h4 class="heading-quatenary">Insert hexadecimal number</h4>
-              <form action="#" class="form">
-                <div class="form__group">
-                   <input type="text" class="form__input" placeholder="to decimal" id="input7" />
-                    <p class="p__result" id="result7"></p>
-                   </form>
-                  </div>
-                  <div class="u-padding-top-small">
-                 <btn class="btn__calculate" onclick="hex_to_dec()">Calculate</btn>
-                </div>
-             </div>
-           </div>
-
-          <div class="converter__form">
-            <h4 class="heading-quatenary">Insert octal number</h4>
-               <form action="#" class="form">
-                 <div class="form__group">
-                  <input type="text" class="form__input" placeholder="to decimal" id="input8"/>
-                  <p class="p__result" id="result8"></p>
-                   </form>
-                  </div>
-                 <div class="u-padding-top-small">
-                   <btn class="btn__calculate" onclick="oct_to_dec()">Calculate</btn>
-                 </div>
-                </div>
-             </div>
-           </div>
+                  <input type="text" class="form__input" placeholder="To binary" id="input1" />
+                  <p class="p__result" id="result1"></p>
+              </form>
+            </div>
+            <div class="u-padding-top-small">
+              <btn class="btn__calculate" id="enterkey" onclick="dec_to_bin()">Calculate</btn>
+            </div>
           </div>
-  </section>
 
-  <section>
-      <div class="popuptwo" id="popup-two">
-        <div class="popuptwo__content">
-           <h3 class="heading-tertiary">Combinatorics</h3>
-              <div class="popuptwo__left">
-                 <p class="popuptwo__text">
-                  The tool is used to calculate combinations.
-                 </p>
-                   </div>
 
-                 <div class="popuptwo__right">
-                  <a href="#section-selector" class="popuptwo__close">&times;</a>
+          <div class="converter__form">
+            <h4 class="heading-quatenary">Insert decimal number</h4>
+            <form class="from">
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="To octal" id="input2" />
+                <p class="p__result" id="result2"></p>
+            </form>
+            <div class="u-padding-top-small">
+              <btn class="btn__calculate" onclick="dec_to_oct()">Calculate</btn>
+            </div>
+          </div>
+        </div>
+
+        <div class="converter__form">
+          <h4 class="heading-quatenary">Insert decimal number</h4>
+          <form class="form">
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required />
+              <p class="p__result" id="result3"></p>
+          </form>
+          <div class="u-padding-top-small">
+            <btn class="btn__calculate" onclick="dec_to_hex()">Calculate</btn>
+            <div>
+            </div>
+          </div>
+
+          <div class="converter__form">
+            <h4 class="heading-quatenary">Insert binary number</h4>
+             <form class="form">
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="to decimal" id="input4" />
+                <p class="p__result" id="result4"></p>
+                </form>
+               <div class="u-padding-top-small">
+              <btn class="btn__calculate" onclick="bin_to_dec()">Calculate</btn>
+            </div>
+          </div>
+        </div>
+
+        <div class="converter__form">
+          <h4 class="heading-quatenary">Insert binary number</h4>
+            <form class="form">
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="to octal" id="input5" />
+                 <p class="p__result" id="result5"></p>
+                   </form>
+                  <div class="u-padding-top-small">
+                 <btn class="btn__calculate" onclick="bin_to_oct()">Calculate</btn>
                 </div>
+               </div>
              </div>
+
+      <div class="converter__form">
+        <h4 class="heading-quatenary">Insert binary number</h4>
+          <form class="form">
+           <div class="form__group">
+            <input type="text" class="form__input" placeholder="to hexadecimal" id="input6" />
+             <p class="p__result" id="result6"></p>
+               </form>
+              </div>
+             <div class="u-padding-top-small">
+            <btn class="btn__calculate" onclick="bin_to_hex()">Calculate</btn>
+           </div>
+         </div>
        </div>
+
+    <div class="converter__form">
+      <h4 class="heading-quatenary">Insert hexadecimal number</h4>
+         <form class="form">
+           <div class="form__group">
+             <input type="text" class="form__input" placeholder="to decimal" id="input7" />
+              <p class="p__result" id="result7"></p>
+               </form>
+               </div>
+              <div class="u-padding-top-small">
+            <btn class="btn__calculate" onclick="hex_to_dec()">Calculate</btn>
+          </div>
+        </div>
+      </div>
+
+    <div class="converter__form">
+       <h4 class="heading-quatenary">Insert octal number</h4>
+         <form class="form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="to decimal" id="input8" />
+             <p class="p__result" id="result8"></p>
+            </form>
+           </div>
+          <div class="u-padding-top-small">
+         <btn class="btn__calculate" onclick="oct_to_dec()">Calculate</btn>
+        </div>
+       </div>
+      </div>
+    </div>
+    </div>
   </section>
-  
+  <!-- pop up for combinatorics-->
   <section>
-  <div class="popupthree" id="popup-three">
-     <div class="popupthree__content">
-       <h3 class="heading-tertiary">Number system outputs of DEC, BIN, OCT and HEX.</h3>
-          <div class="popupthree__left">
-             <p class="popupthree__text">
-              These tabels prints numercial systems showing decimals 0-50 in binary number, ocat numbers and hexadecimal. 
-             </p>
-               </div>
+    <div class="popuptwo" id="popup-two">
+      <div class="popuptwo__content">
+        <h3 class="heading-tertiary">Combinatorics</h3>
+        <div class="popuptwo__left">
+          <p class="popuptwo__text">Combinations Calculator will find the number of possible combinations when taken sample from large set. "N" value represent objects in large set and "R" value represents amount of samples taken from the larger set.</p>
+        </div>
 
-                <div class="popupthree__right">
-                <a href="#section-selector" class="popupthree__close">&times;</a>
-                    <form action="#" class="form">
-                      <div class="from__group">
-                        <p><input type="button" value="Print Decimal" onclick='printDEC()' />
-                         <p><input type="button" value="Print BIN" onclick='printBIN()' />
-                            <p><input type="button" value="Print OCT" onclick='printOCT()' />
-                             <p><input type="button" value="Print HEX" onclick='printHEX()' />
-                             <p><input type="button" value="Print ALL"onclick='printHEX(), printOCT(), printBIN(), printDEC()' />
-                            <div><input type="button" value="Hide/show table" onclick="hideTable()"/>
-                          </div> 
-              
-                              <div id="table">
-                </form>  
-              
-                                <p id="decPrint"></p>
-                                <p id="binPrint"></p>
-                                <p id="octPrint"></p>
-                                <p id="hexPrint"></p>
-                                <p id="allPrint"></p>
-                            </div>             
-                         </div>
-                       </div>
-                     </div>
-                  </section>
-
-              <section>
-
-               <div class="popupfour" id="popup-four">
-                 <div class="popupfour__content">
-                      <h3 class="heading-tertiary">Truth tabels</h3>
-                       <div class="popupfour__left">
-                          <p class="popupfour__text">
-                             This function calculates basic set of truth tables for basic operations.
-                          </p>
-                      </div>
-
-               <div class="popupfour__right">
-                <a href="#section-selector" class="popupfour__close">&times;</a>
-      
-                 </div>
-               </div>
-             </div>
-           </section>
-
-        <section>
-         <div class="popupfive" id="popup-five">
-          <div class="popupfive__content">
-             <h3 class="heading-tertiary">Random Number Generator.</h3>
-                <div class="popupfive__left">
-                   <p class="popupfive__text">
-                     This mathematical tool does numbering system conversions. The numbering systems that this tool helps to converts are: Binary numbers, Ocatl numbers, Decimal numbers, and Hexadeciaml numbers.
-                   </p>
-                     </div>
-
-                   <div class="popupfive__right">
-                     <a href="#section-selector" class="popupfive__close">&times;</a>
-                       <form action="#">
-                         <div class="from__group">
-                        <p>How many numbers: <input type="text" id="qtyNumbers" name="qtyNumbers" value="1"> from 
-                          <input type="text" id="minNumber" name="minNumber" value="1"> to 
-                            <input type="text" id="maxNumber" name="maxNumber" value="10"></p>
-                              <p><textarea id="resultNumber" name="resultNumber" rows="10" cols="20"></textarea></p>
-                                <p><input type="button" id="calculateBtn" name="calculateBtn" value="Generate Random Number">
-                                <input type="button" name="resetBtn" id="resetBtn" value="Reset"></p>
-        
-                                <p>Options:</p>
-                                 <p><input name="optionsSelect" class="optionsSelect" id="optionsSel" value="optionsSel" checked="checked" type="radio"> Individual rows
-                                 <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="," type="radio"> Separated by a comma
-                                <input name="optionsSelect" class="optionsSelect" id="optionsSel" value=" " type="radio"> Separated by a space</p>
-                                        
-                                     <p>C(n,r):</p>
-                                    <input type="text" placeholder="n" id="n" /> 
-                                  <input type="text" placeholder="r" id="r" />
-                                </div>
-                              </form>  
-                                        <btn class="btn__calculate" id="calculate">Calculate</btn>
-                                      <p id="result">Result:</p>
-                                       <div>
-                                     </div>  
-                                    </div>
-                                </div>
-                             </div>
-                         </section>
-
-                         <section>
-                           <div class="popupsix" id="popup-six">
-                              <div class="popupsix__content">
-                                 <h3 class="heading-tertiary">Number system conversions of DEC, BIN, OCT and HEX.</h3>
-                                   <div class="popupsix__left">
-                                     <p class="popupsix__text">
-  
-                                      </p>
-                                  </div>
-
-                              <div class="popupsix__right">
-                                <a href="#section-selector" class="popupsix__close">&times;</a>
-                                  </div>
-                               </div>
+        <div class="popuptwo__right">
+          <a href="#section-selector" class="popuptwo__close">&times;</a>
+                 <div class="u-padding-left-medium">
+                        <h4 class="heading-quatenary">C(n,r):</h4>
+                         <div class="u-display-inline-block">
+                           <form class="from">
+                            <input type="text" class="form__input" placeholder="n" id="n" />
+                            </form>
                              </div> 
-                           </section>
+                              <div class="u-display-inline-block"> 
+                              <form class="from">
+                             <input type="text" class="form__input" placeholder="r" id="r" />
+                            </form>
+                          </div> 
+                          <btn class="btn__calculate" id="calculate">Calculate</btn>
+                       <h4 class="heading-quatenary--combresult" id="result">Result:</h4>
+                   </div>      
+                 </div>
+              </div>
+             </div>
+     </section>
 
-    </body>
-              
-    <script src="calculations.js"></script>
-  
+  <!-- Pop up for number system outputs-->
+  <section>
+    <div class="popupthree" id="popup-three">
+      <div class="popupthree__content">
+        <div class="popupthree__left">
+          <h3 class="heading-tertiary">Number system outputs of DEC, BIN, OCT and HEX.</h3>
+          <p class="popupthree__text">
+            These tabels prints numercial systems showing decimal numbers rangin from 0-50 in binary number, ocat numbers and hexadecimal numbers. You can print each tabel individually or all the tabels all at once.
+          </p>
+        </div>
+
+        <div class="popupthree__right">
+          <a href="#section-selector" class="popupthree__close">&times;</a>
+               <form class="form">
+                      <div class="u-display-inline-block">
+                        <input class="btn__calculate" type="button" value="Print Decimal" onclick='printDEC()'/>
+                           <div class="table" id="table">
+                               <p class="table__output" id="decPrint"></p>
+                              </div>
+                             </div> 
+                        
+
+                           <div class="u-display-inline-block">
+                              <input class="btn__calculate" type="button" value="Print BIN" onclick='printBIN()'/>
+                               <div class="table" id="table">
+                                <p class="table__output" id="binPrint"></p>
+                                 </div>
+                                </div>
+
+                                <div class="u-display-inline-block">
+                                   <input class="btn__calculate" type="button" value="Print OCT" onclick='printOCT()'/>
+                                      <div class="table" id="table">
+                                       <p class="table__output" id="octPrint"></p>
+                                       </div>
+                                </div>
+
+                              <div class="u-display-inline-block">
+                                 <input class="btn__calculate" type="button" value="Print HEX" onclick='printHEX()'/>
+                                  <div class="table" id="table">
+                                  <p class="table__output" id="hexPrint"></p>
+                                 </div>
+                                </div>
+
+                              <div class="u-margin-bottom-small u-margin-top-medium u-display-inline-block">
+                                 <input class="btn__calculate" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
+                                <div class="table" id="table">
+                                  <p class="table__output" id="allPrint"></p>
+                                </div>
+                              </div>
+                              
+                              
+                                 <div class="u-display-inline-block">
+                                  <input class="btn__calculate" type="button" value="Hide/show table" onclick="hideTable()"/>
+                              </div>
+                     </div>
+                    </form>
+        </section>
+
+    <!-- Pop up for Truth Tabels-->
+    <section>
+      <div class="popupfour" id="popup-four">
+        <div class="popupfour__content">
+          <h3 class="heading-tertiary">Truth tabels</h3>
+          <div class="popupfour__left">
+            <p class="popupfour__text">
+              This function calculates basic set of truth tables for basic operations.
+            </p>
+          </div>
+
+          <div class="popupfour__right">
+            <a href="#section-selector" class="popupfour__close">&times;</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pop up for Random Values-->
+
+    <div>
+      <div class="popupfive" id="popup-five">
+        <div class="popupfive__content">
+          <h3 class="heading-tertiary">Random Number Generator</h3>
+            <div class="popupfive__left">
+               <p class="popupfive__text">
+                 This mathematical tool tests random number distributions. You can choose any range of numbers and theprogram will show you distrbiution of the numbers.
+          </div>
+
+          <div class="popupfive__right">
+            <a href="#section-selector" class="popupfive__close">&times;</a>
+
+          
+                    <h4 class="heading-quatenary--sub">Choose input type:</h>
+                        <div class="form__group">
+                          <div class="form__radio-group">
+                            <p class="form__radio-group u-margin-bottom-small">Options</p>
+                           <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="optionsSel" checked="checked" type="radio">
+                             Individual rows 
+                             </div>
+                             <div class="form__radio-group">
+                             <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="," type="radio">
+                             Separated by a comma
+                            </div>
+                          </div>    
+                           <h4 class="heading-quatenary--sub">How many numbers</h4>
+                            <div class="u-margin-bottom-small">
+                              <form class="form">
+                                 <input class="form__input" type="text" id="qtyNumbers" name="qtyNumbers" value="1"/>
+                                 </form></div>
+                                 <h4 class="heading-quatenary--sub">Rangin from</h4>
+                                  <form class="form">
+                                   <input class="form__input" type="text" id="minNumber" name="minNumber" value="1"/>
+                                  </form> 
+                                   <h4 class="heading-quatenary--sub">to</h4>
+                                  <div class="u-margin-bottom-small">
+                                 <form class="form">
+                                <input class="form__input" type="text" id="maxNumber" name="maxNumber"value="10">
+                               </form>
+                              </div>
+                              <div class="u-margin-bottom-medium u-padding-top-big">
+                              <h4 class="heading-quatenary u-padding-top-medium">Distribution results</h4>
+                             <div class="textarea">
+                             <textarea class="textarea__input" id="resultNumber" name="resultNumber" rows="10" cols="20"></textarea>
+                            </div>
+                              </div>
+                           <input type="button" class="btn__calculate" id="calculateBtn" name="calculateBtn" value="Generate Random Number">
+                        <input type="button" class="btn__calculate" name="resetBtn" id="resetBtn" value="Reset"></p>
+                   </div> 
+                </div>
+
+    </section>
+
+    <!-- Pop up for Cuurency Converter-->
+    <section>
+      <div class="popupsix" id="popup-six">
+        <div class="popupsix__content">
+          <h3 class="heading-tertiary">Currency Converter</h3>
+          <div class="popupsix__left">
+            <p class="popupsix__text">
+
+            </p>
+          </div>
+
+          <div class="popupsix__right">
+            <a href="#section-selector" class="popupsix__close">&times;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+
+<script src="calculations.js"></script>
+
 </html>
