@@ -590,6 +590,132 @@ Select currency:
 <input type="number" class="form-control" id="value4" disabled="disabled"/>
 </div>
 
+<table>AND
+  <tr>
+    <th>p</th>
+    <th>q</th>
+    <th>p^q</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+
+  </tr>
+  <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+
+    </tr>
+</table>
+
+<table>OR
+  <tr>
+    <th>p</th>
+    <th>q</th>
+    <th>p∨q</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+
+  </tr>
+  <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>T</td>
+
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+
+    </tr>
+</table>
+<table>NOR
+  <tr>
+    <th>p</th>
+    <th>q</th>
+    <th>p↓q</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>F</td>
+
+  </tr>
+  <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>T</td>
+
+    </tr>
+</table>
+<table>XOR
+  <tr>
+    <th>p</th>
+    <th>q</th>
+    <th>p⊻q</th>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>T</td>
+    <td>F</td>
+
+  </tr>
+  <tr>
+    <td>T</td>
+    <td>F</td>
+    <td>T</td>
+
+  </tr>
+  <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>T</td>
+
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+
+    </tr>
+</table>
+
 <script src="calculations.js"></script>
 
 </html>
