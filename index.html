@@ -399,135 +399,138 @@
           <div class="popupfour__right">
             <a href="#section-selector" class="popupfour__close">&times;</a>
             <table class="truth-tabels">
-              <h4 class=heading-quatenary--sun">AND</h4>
+              <div class="from__group">
+                <form class="form">
+                <h4 class="heading-quatenary--sub">Input Truth and False values</h4>
+                   <input class="form__input--truth" type="number" id="trueFirst" value="0" min="0" max="1" onchange="truthTable();"/>
+                 <input class="form__input--truth" type="number" id="trueSecond" value="0" min="0" max="1" onchange="truthTable();"/>
+              <br/>
+             </form>
+            </div>  
+          <h4 class="heading-quatenary--sub">AND table</h4> 
+            <table class="tabel__truth">
+              <td>p</td>
+              <td>q</td>
+              <td>p^q</td>
+             </tr>
               <tr>
-                <th>p</th>
-                <th>q</th>
-                <th>p^q</th>
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>T</td>
-                <td>T</td>
-            
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>F</td>
-                <td>F</td>
-            
-              </tr>
-              <tr>
-                  <td>F</td>
-                  <td>T</td>
-                  <td>F</td>
-            
-                </tr>
-                <tr>
-                  <td>F</td>
-                  <td>F</td>
-                  <td>F</td>
-            
-                </tr>
-            </table>
-            
-            <table class="truth-tabels">
-              <h4 class="heading-quatenary--sub">OR</h4>
-              <tr>
-                <th>p</th>
-                <th>q</th>
-                <th>p∨q</th>
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>T</td>
-                <td>T</td>
-            
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>F</td>
-                <td>T</td>
-            
-              </tr>
-              <tr>
-                  <td>F</td>
-                  <td>T</td>
-                  <td>T</td>
-            
-                </tr>
-                <tr>
-                  <td>F</td>
-                  <td>F</td>
-                  <td>F</td>
-            
-                </tr>
-            </table>
-            <table>NOR
-              <tr>
-                <th>p</th>
-                <th>q</th>
-                <th>p↓q</th>
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>T</td>
-                <td>F</td>
-            
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>F</td>
-                <td>F</td>
-            
-              </tr>
-              <tr>
-                  <td>F</td>
-                  <td>T</td>
-                  <td>F</td>
-            
-                </tr>
-                <tr>
-                  <td>F</td>
-                  <td>F</td>
-                  <td>T</td>
-            
-                </tr>
-            </table>
-            <table>XOR
-              <tr>
-                <th>p</th>
-                <th>q</th>
-                <th>p⊻q</th>
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>T</td>
-                <td>F</td>
-            
-              </tr>
-              <tr>
-                <td>T</td>
-                <td>F</td>
-                <td>T</td>
-            
-              </tr>
-              <tr>
-                  <td>F</td>
-                  <td>T</td>
-                  <td>T</td>
-            
-                </tr>
-                <tr>
-                  <td>F</td>
-                  <td>F</td>
-                  <td>F</td>
-            
-                </tr>
-            </table>
+               <td>T</td>
+               <td>T</td>
+               <td>T</td>
+             </tr>
+             <tr>
+               <td>T</td>
+               <td>F</td>
+              <td>F</td>
+             </tr>
+             <tr>
+               <td>F</td>
+               <td>T</td>
+               <td>F</td>
+             </tr>
+             <tr>
+               <td>F</td>
+               <td>F</td>
+               <td>F</td>
+             </tr>
+           </table>
+           <p class="p__result--truth" id="and">Result</p>
 
-          </div>
-        </div>
+          
+           <table class="tabel__truth">
+            <h4 class="heading-quatenary--sub">OR table</h4>
+               <tr>
+                 <td>p</td>
+                 <td>q</td>
+                 <td>p∨q</td>
+               </tr>
+                <tr>
+                 <td>T</td>
+                 <td>T</td>
+                 <td>T</td>
+                </tr>
+                <tr>
+                 <td>T</td>
+                 <td>F</td>
+                 <td>T</td>
+                </tr>
+                <tr>
+                 <td>F</td>
+                 <td>T</td>
+                 <td>T</td>
+                </tr>
+                <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+    </tr>
+</table>
+<p class="p__result--truth" id="or">Result</p>
+
+<div class="u-padding-top-large">
+<h4 class="heading-quatenary--sub">XOR table</h4>
+</div>
+<table class="tabel__truth">
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p⊕q</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>F</td>
+        <td>T</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>T</td>
+        <td>T</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+    </tr>
+</table>
+<p class="p__result--truth" id="xor">Result</p>
+
+<h4 class="heading-quatenary--sub">NOR table</h4>
+<table class="tabel__truth">
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p↓q</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>F</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>T</td>
+    </tr>
+</table>
+<div class="u-margin-bottom-medium">
+<p class="p__result--truth" id="nor">Result</p>
+</div>
+      
       </div>
     </section>
     <!-- Pop up for Random Values-->
@@ -705,6 +708,7 @@
 
 </body>
 
+<div>
 <script src="calculations.js"></script>
 
 </html>

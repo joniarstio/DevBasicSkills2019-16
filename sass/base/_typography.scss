@@ -95,11 +95,21 @@ body {
      // STYLING FOR THE RESULTS OF CONVERSON FROM BIN,DEC,HEX AND OCATL NUMBERS.
 
     .p {
+        position: absolute;
       
       &__result {
           display: inline-block;
           font-size: 2rem;
           padding-left: 5rem;
+       
+      &--truth {
+          display:inline-block;
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: $color-dark-blue;
+          text-transform: uppercase;
+          padding-left: 10rem;
+      }
         }
   
      }

@@ -361,4 +361,14 @@ function CalculateCurrFromEUR(){
                     break;
                 }
 		    }
-	}
+    }
+   
+//Truth table calculator
+function truthTable() {
+    var trueFirst = Number(document.getElementById("trueFirst").value);
+    var trueSecond = Number(document.getElementById("trueSecond").value);
+        document.getElementById("and").innerHTML = !! (trueFirst && trueSecond);
+        document.getElementById("or").innerHTML =  !! (trueFirst || trueSecond);
+        document.getElementById("xor").innerHTML = !! ( ( trueFirst && !trueSecond ) || ( !trueFirst && trueSecond ) );
+        document.getElementById("nor").innerHTML = !! (!trueFirst && !trueSecond);
+    }

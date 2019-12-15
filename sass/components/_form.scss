@@ -11,6 +11,19 @@
         background-color: rgba($color-grey, .5);
         border-bottom: 2px solid transparent;
         width: 45%;
+    
+        //TRUTH TABELS DISPLAY OPTION
+
+     &--truth {
+        font-size: 1.3rem;
+        font-family: inherit;
+        padding: .5rem 1rem;
+        border-radius: 1px;
+        background-color: rgba($color-grey, .5);
+        border-bottom: 2px solid transparent;
+        width: 20%;
+
+     }   
 
     }
 

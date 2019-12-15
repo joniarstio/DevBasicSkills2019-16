@@ -9,5 +9,15 @@
         font-size: 1.2rem;
         color: $color-dark-blue;
         
-    }   
+    }
+    
+    //TRUTH LOOK TABELS STYILING
+    &__truth {
+        display: block;
+        display: table-cell;
+        column-count: 3;
+        font-size: 2rem;
+        color: $color-dark-blue;
+
+    }
 }
