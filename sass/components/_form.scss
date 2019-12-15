@@ -20,5 +20,18 @@
         outline: none;
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
         border-bottom: 3px solid $color-blue;
+    } 
+
+    &__radio-group {
+        width: 50%;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding-top: 1.5rem;
+        position: relative;
     }
-}
+
+
+    }
+
+
+
