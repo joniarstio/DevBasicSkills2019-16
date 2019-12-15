@@ -47,9 +47,21 @@
             padding-top: 5rem;
 
         }
-    }
+    } 
+  
+
+    &__select {
+        background-color: $color-grey-middle;
+        border-style: none;
+        width: 40%;
+        border-radius: .5rem;
+        text-decoration: none;
+        color: $color-dark-blue;
+        font-size: 1.5;
+        padding: .6rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, .1);
 
     }
 
-
+}
 

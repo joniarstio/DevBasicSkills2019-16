@@ -77,6 +77,8 @@ body {
     
         }
 
+        //SUB HEADING FOR HEADING QUATENARY
+
         &--sub {
             font-size: 1.3rem;
             text-transform: uppercase;
@@ -99,17 +101,10 @@ body {
           font-size: 2rem;
           padding-left: 5rem;
         }
-
-     //STYILING FOR RANDOM NUMBER SUB HEADING "DISPLAY OPTIONS"   
-      &__random {
-          font-size: 1.3rem;
-           color: $color-dark-blue;
-          text-transform: uppercase;
-          font-family: inherit;
-      }
-      
   
      }
+
+     //RANDOM NUMBER TEXTAREA STYLING
 
      .textarea {
         &__group:not(:last-child) {

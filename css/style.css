@@ -92,12 +92,6 @@ body {
   font-size: 2rem;
   padding-left: 5rem; }
 
-.p__random {
-  font-size: 1.3rem;
-  color: #253840;
-  text-transform: uppercase;
-  font-family: inherit; }
-
 .textarea__group:not(:last-child) {
   margin-bottom: 1rem; }
 
@@ -132,6 +126,9 @@ body {
 
 .u-padding-left-big {
   padding-left: 8rem !important; }
+
+.u-padding-top-tiny {
+  margin-top: .5rem !important; }
 
 .u-padding-top-small {
   margin-top: 1.5rem !important; }
@@ -380,6 +377,17 @@ body {
     cursor: pointer;
     padding-top: 5rem; }
 
+.form__select {
+  background-color: #cbd1d6;
+  border-style: none;
+  width: 40%;
+  border-radius: .5rem;
+  text-decoration: none;
+  color: #253840;
+  font-size: 1.5;
+  padding: .6rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+
 .popup,
 .popuptwo,
 .popupfour,
@@ -405,7 +413,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 83%;
-    height: 70%;
+    height: 75%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
