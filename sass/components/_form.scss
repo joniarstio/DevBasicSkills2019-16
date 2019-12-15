@@ -1,25 +1,23 @@
 .form {
     &__group:not(:last-child) {
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 
     &__input {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: inherit;
         padding: .5rem 1rem;
-        border-radius: 2px;
+        border-radius: 1px;
         background-color: rgba($color-grey, .5);
-        border-bottom: 3px solid transparent;
-        width: 50%;
-
-        
+        border-bottom: 2px solid transparent;
+        width: 45%;
 
     }
 
     &__input:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
-        border-bottom: 3px solid $color-blue;
+        border-bottom: 2px solid $color-blue;
     } 
 
     &__radio-group {
@@ -29,7 +27,27 @@
         padding-top: 1.5rem;
         position: relative;
     }
+    
+    &__button {
+        background-color: $color-grey-middle;
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.3rem;
+        padding: 5rem;
+        position: relative;
+        text-transform: uppercase;
+        padding-top: 4rem;
+        border-radius: .3rem;
+        font-weight: 400rem;
 
+       
+
+        &--print {
+            cursor: pointer;
+            padding-top: 5rem;
+
+        }
+    }
 
     }
 

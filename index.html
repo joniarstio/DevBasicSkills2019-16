@@ -209,7 +209,7 @@
            </div>
       
           <div class="converter__form">
-            <h4 class="heading-quatenary">Insert decimal number</h4>
+            <h4 class="heading-quatenary--sub">Insert decimal number</h4>
             <form class="from">
               <div class="form__group">
                 <input type="text" class="form__input" placeholder="To octal" id="input2" />
@@ -222,7 +222,7 @@
         </div>
 
         <div class="converter__form">
-          <h4 class="heading-quatenary">Insert decimal number</h4>
+          <h4 class="heading-quatenary--sub">Insert decimal number</h4>
           <form class="form">
             <div class="form__group">
               <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required />
@@ -235,7 +235,7 @@
           </div>
 
           <div class="converter__form">
-            <h4 class="heading-quatenary">Insert binary number</h4>
+            <h4 class="heading-quatenary--sub">Insert binary number</h4>
              <form class="form">
               <div class="form__group">
                 <input type="text" class="form__input" placeholder="to decimal" id="input4" />
@@ -248,7 +248,7 @@
         </div>
 
         <div class="converter__form">
-          <h4 class="heading-quatenary">Insert binary number</h4>
+          <h4 class="heading-quatenary--sub">Insert binary number</h4>
             <form class="form">
               <div class="form__group">
                 <input type="text" class="form__input" placeholder="to octal" id="input5" />
@@ -261,7 +261,7 @@
              </div>
 
       <div class="converter__form">
-        <h4 class="heading-quatenary">Insert binary number</h4>
+        <h4 class="heading-quatenary--sub">Insert binary number</h4>
           <form class="form">
            <div class="form__group">
             <input type="text" class="form__input" placeholder="to hexadecimal" id="input6" />
@@ -275,7 +275,7 @@
        </div>
 
     <div class="converter__form">
-      <h4 class="heading-quatenary">Insert hexadecimal number</h4>
+      <h4 class="heading-quatenary--sub">Insert hexadecimal number</h4>
          <form class="form">
            <div class="form__group">
              <input type="text" class="form__input" placeholder="to decimal" id="input7" />
@@ -289,7 +289,7 @@
       </div>
 
     <div class="converter__form">
-       <h4 class="heading-quatenary">Insert octal number</h4>
+       <h4 class="heading-quatenary--sub">Insert octal number</h4>
          <form class="form">
           <div class="form__group">
             <input type="text" class="form__input" placeholder="to decimal" id="input8" />
@@ -304,6 +304,7 @@
     </div>
     </div>
   </section>
+
   <!-- pop up for combinatorics-->
   <section>
     <div class="popuptwo" id="popup-two">
@@ -316,7 +317,7 @@
         <div class="popuptwo__right">
           <a href="#section-selector" class="popuptwo__close">&times;</a>
                  <div class="u-padding-left-medium">
-                        <h4 class="heading-quatenary">C(n,r):</h4>
+                        <h4 class="heading-quatenary--sub">C(n,r):</h4>
                          <div class="u-display-inline-block">
                            <form class="from">
                             <input type="text" class="form__input" placeholder="n" id="n" />
@@ -349,12 +350,15 @@
         <div class="popupthree__right">
           <a href="#section-selector" class="popupthree__close">&times;</a>
                <form class="form">
+                 <div class="form__group">
                       <div class="u-display-inline-block">
-                        <input class="btn__calculate" type="button" value="Print Decimal" onclick='printDEC()'/>
+                        <input class="btn__calculate--print" type="button" value="Print Decimal" onclick='printDEC()'/>
+                          </div>
                            <div class="table" id="table">
-                               <p class="table__output" id="decPrint"></p>
-                              </div>
-                             </div> 
+                            <p class="table__output" id="decPrint"></p>
+                            </div>
+                           </div>
+
                         
 
                            <div class="u-display-inline-block">
