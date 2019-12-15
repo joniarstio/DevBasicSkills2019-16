@@ -307,41 +307,48 @@
                            </div>
 
                         
-
+                          <div class="form__group">  
                            <div class="u-display-inline-block">
-                              <input class="btn__calculate" type="button" value="Print BIN" onclick='printBIN()'/>
+                              <input class="btn__calculate--print" type="button" value="Print BIN" onclick='printBIN()'/>
                                <div class="table" id="table">
                                 <p class="table__output" id="binPrint"></p>
                                  </div>
                                 </div>
+                             </div> 
 
+                             <div class="form__group">
                                 <div class="u-display-inline-block">
-                                   <input class="btn__calculate" type="button" value="Print OCT" onclick='printOCT()'/>
+                                   <input class="btn__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
                                       <div class="table" id="table">
                                        <p class="table__output" id="octPrint"></p>
                                        </div>
-                                </div>
+                                     </div>
+                                   </div>
 
-                              <div class="u-display-inline-block">
-                                 <input class="btn__calculate" type="button" value="Print HEX" onclick='printHEX()'/>
+                             <div class="form__group">
+                               <div class="u-display-inline-block">
+                                 <input class="btn__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
                                   <div class="table" id="table">
                                   <p class="table__output" id="hexPrint"></p>
                                  </div>
                                 </div>
+                              </div> 
 
+                            <div class="form__group">  
                               <div class="u-margin-bottom-small u-margin-top-medium u-display-inline-block">
-                                 <input class="btn__calculate" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
-                                <div class="table" id="table">
+                                 <input class="btn__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
+                                  <div class="table" id="table">
                                   <p class="table__output" id="allPrint"></p>
+                                 </div>
+                                 </div>
                                 </div>
-                              </div>
                               
-                              
+                                <div class="form__group">
                                  <div class="u-display-inline-block">
-                                  <input class="btn__calculate" type="button" value="Hide/show table" onclick="hideTable()"/>
+                                  <input class="btn__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
                               </div>
-                     </div>
-                    </form>
+                            </div> 
+                           </form>
         </section>
 
     <!-- Pop up for Truth Tabels-->
@@ -364,7 +371,7 @@
     </section>
 
     <!-- Pop up for Random Values-->
-
+<section>
     <div>
       <div class="popupfive" id="popup-five">
         <div class="popupfive__content">

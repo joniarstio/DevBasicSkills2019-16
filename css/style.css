@@ -225,6 +225,15 @@ body {
   border-radius: .3rem;
   font-weight: 400rem;
   cursor: pointer; }
+  .btn__calculate--print {
+    background-color: #cbd1d6;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+    text-align: center;
+    display: inline-block; }
 
 .card {
   perspective: 150rem;
