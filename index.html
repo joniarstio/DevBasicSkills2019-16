@@ -142,19 +142,72 @@
           <div class="converter">
             <div class="converter__form">
 
-              <h4 class="heading-quatenary--sub">Insert decimal number</h4>
-              <form class="from">
+              <h4 class="heading-quatenary">Insert decimal number</h4>
+                <form action="#" class="from">
+                   <div class="form__group">
+                     <input type="text" class="form__input" placeholder="To octal" id="input2"/>
+                     <p class="p__result" id="result2"></p>
+                      </form>
+                    <div class="u-padding-top-small"> 
+                    <btn class="btn__calculate" onclick="dec_to_oct()">Calculate</btn>
+                  </div>
+              </div>
+           </div>  
+            
+           <div class="converter__form">
+            <h4 class="heading-quatenary">Insert decimal number</h4>
+                <form action="#" class="form">
+                   <div class="form__group">
+                     <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required/>
+                     <p class="p__result" id="result3"></p>
+                      </form>
+                     <div class="u-padding-top-small">
+                    <btn class="btn__calculate" onclick="dec_to_hex()">Calculate</btn>
+                    <div>
+               </div>
+             </div> 
+        
+          <div class="converter__form"> 
+            <h4 class="heading-quatenary">Insert binary number</h4>
+               <form action="#" class="form" onsubmit="return false;">
                 <div class="form__group">
-                  <input type="text" class="form__input" placeholder="To binary" id="input1" />
-                  <p class="p__result" id="result1"></p>
-              </form>
-            </div>
-            <div class="u-padding-top-small">
-              <btn class="btn__calculate" id="enterkey" onclick="dec_to_bin()">Calculate</btn>
-            </div>
-          </div>
-
-
+                    <input type="text" class="form__input" placeholder="to decimal" id="input4" pattern="[0-1]{1,}" />
+                    <p class="p__result" id="result4"></p>
+                 </form>
+                  <div class="u-padding-top-small">
+                   <btn class="btn__calculate" onclick="bin_to_dec()">Calculate</btn>
+                 </div> 
+             </div>
+           </div>  
+    
+           <div class="converter__form">
+            <h4 class="heading-quatenary">Insert binary number</h4>
+                <form action="#" class="form" onsubmit="return false;">
+                  <div class="form__group">
+                   <input type="text" class="form__input" placeholder="to octal" id="input5" pattern="[0-1]{1,}" />
+                   <p class="p__result" id="result5"></p>
+                 </form>
+                 <div class="u-padding-top-small">
+                   <btn class="btn__calculate" onclick="bin_to_oct()">Calculate</btn>
+                </div> 
+                
+               </div>
+             </div> 
+           
+           <div class="converter__form">
+              <h4 class="heading-quatenary">Insert binary number</h4>
+                 <form action="#" class="form" onsubmit="return false;">
+                   <div class="form__group">
+                     <input type="text" class="form__input" placeholder="to hexadecimal" id="input6" pattern="[0-1]{1,}" />
+                     <p class="p__result" id="result6"></p>
+                     </form>
+                   </div>
+                    <div class="u-padding-top-small">   
+                   <btn class="btn__calculate" onclick="bin_to_hex()">Calculate</btn>
+                 </div>
+              </div>
+           </div>
+      
           <div class="converter__form">
             <h4 class="heading-quatenary--sub">Insert decimal number</h4>
             <form class="from">
@@ -444,6 +497,105 @@
     </section>
 
 </body>
+
+<div>
+  <h2>Currency converter to Euros</h2>
+
+  Insert amount: 
+  <input type="number" oninput="CalculateCurrToEUR()" class="form-control" id="value1"/>
+  <br />
+  
+  Select currency: 
+  <select onchange="CurrencyToEUR(); CalculateCurrToEUR()" class="form-control" id="converterToEur">
+  <option value="AUD">Australian dollar (A$)</option>
+  <option value="BRL">Brazilian real (R$)</option>
+  <option value="CAD">Canadian dollar (C$)</option>
+  <option value="CLP">Chilean peso (CLP$)</option>
+  <option value="COP">Colombian peso (COL$)</option>
+  <option value="CZK">Czech koruna (Kč)</option>
+  <option value="DKK">Danish krone (kr)</option>
+  <option value="MAR">Finnish Markka (mk)</option>
+  <option value="HKD">Hong Kong dollar (HK$)</option>
+  <option value="HUF">Hungarian forint (Ft)</option>
+  <option value="INR">Indian rupee (₹)</option>
+  <option value="IDR">Indonesian rupiah (Rp)</option>
+  <option value="ILS">Israeli new shekel (₪)</option>
+  <option value="JPY">Japanese yen (¥)</option>
+  <option value="MYR">Malaysian ringgit (RM)</option>
+  <option value="MXN">Mexican peso ($)</option>
+  <option value="TWD">New Taiwan dollar (NT$)</option>
+  <option value="NZD">New Zealand dollar (NZ$)</option>
+  <option value="NOK">Norwegian krone (kr)</option>
+  <option value="PHP">Philippine peso (₱)</option>
+  <option value="PLN">Polish zloty (zł)</option>
+  <option value="GBP">Pound sterling (£)</option>
+  <option value="RON">Romanian leu (L)</option>
+  <option value="RUB">Russian ruble (₽)</option>
+  <option value="SAR">Saudi riyal (﷼)</option>
+  <option value="SEK">Swedish krona (kr)</option>							
+  <option value="CHF">Swiss franc (CHF)</option>
+  <option value="SGD">Singapore dollar (S$)</option>
+  <option value="ZAR">South African rand (R)</option>
+  <option value="KRW">South Korean won (₩)</option>
+  <option value="THB">Thai baht (฿)</option>
+  <option value="TRY">Turkish lira (₺)</option>				
+  <option value="AED">UAE dirham (د.إ)</option>
+  <option value="USD">United States dollar (US$) </option>		
+</select>
+<br />			
+<label>In Euros €:</label>
+<input type="number" class="form-control" id="value2" disabled="disabled"/>
+</div>
+
+<div>
+<h2>Currency converter from Euros</h2>
+
+Insert amount: 
+<input type="number" oninput="CalculateCurrFromEUR()" class="form-control" id="value3"/>
+<br />
+
+Select currency: 
+<select onchange="CurrencyFromEUR(); CalculateCurrFromEUR()" class="form-control" id="converterFromEur">
+<option value="AUD">Australian dollar (A$)</option>
+<option value="BRL">Brazilian real (R$)</option>
+<option value="CAD">Canadian dollar (C$)</option>
+<option value="CLP">Chilean peso (CLP$)</option>
+<option value="COP">Colombian peso (COL$)</option>
+<option value="CZK">Czech koruna (Kč)</option>
+<option value="DKK">Danish krone (kr)</option>
+<option value="MAR">Finnish Markka (mk)</option>
+<option value="HKD">Hong Kong dollar (HK$)</option>
+<option value="HUF">Hungarian forint (Ft)</option>
+<option value="INR">Indian rupee (₹)</option>
+<option value="IDR">Indonesian rupiah (Rp)</option>
+<option value="ILS">Israeli new shekel (₪)</option>
+<option value="JPY">Japanese yen (¥)</option>
+<option value="MYR">Malaysian ringgit (RM)</option>
+<option value="MXN">Mexican peso ($)</option>
+<option value="TWD">New Taiwan dollar (NT$)</option>
+<option value="NZD">New Zealand dollar (NZ$)</option>
+<option value="NOK">Norwegian krone (kr)</option>
+<option value="PHP">Philippine peso (₱)</option>
+<option value="PLN">Polish zloty (zł)</option>
+<option value="GBP">Pound sterling (£)</option>
+<option value="RON">Romanian leu (L)</option>
+<option value="RUB">Russian ruble (₽)</option>
+<option value="SAR">Saudi riyal (﷼)</option>
+<option value="SEK">Swedish krona (kr)</option>							
+<option value="CHF">Swiss franc (CHF)</option>
+<option value="SGD">Singapore dollar (S$)</option>
+<option value="ZAR">South African rand (R)</option>
+<option value="KRW">South Korean won (₩)</option>
+<option value="THB">Thai baht (฿)</option>
+<option value="TRY">Turkish lira (₺)</option>				
+<option value="AED">UAE dirham (د.إ)</option>
+<option value="USD">United States dollar (US$) </option>		
+</select>
+<br />
+
+<label>In selected currency:</label>
+<input type="number" class="form-control" id="value4" disabled="disabled"/>
+</div>
 
 <script src="calculations.js"></script>
 
