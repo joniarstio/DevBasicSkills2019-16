@@ -590,131 +590,128 @@ Select currency:
 <input type="number" class="form-control" id="value4" disabled="disabled"/>
 </div>
 
-<table>AND
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p^q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>T</td>
+<h2>Truth Tables</h2>
+<br>
+<input type="number" id="trueFirst" value="0" min="0" max="1" onchange="truthTable();"/>
+<br>
+<input type="number" id="trueSecond" value="0" min="0" max="1" onchange="truthTable();"/>
+<br/>
 
-  </tr>
-  <tr>
+<table>AND table: 
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p^q</td>
+    </tr>
+<tr>
+    <td>T</td>
+    <td>T</td>
+    <td>T</td>
+</tr>
+<tr>
     <td>T</td>
     <td>F</td>
     <td>F</td>
+</tr>
+<tr>
+    <td>F</td>
+    <td>T</td>
+    <td>F</td>
+</tr>
+<tr>
+    <td>F</td>
+    <td>F</td>
+    <td>F</td>
+</tr>
+</table>
+Result: <p id="and"></p>
 
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>F</td>
-
+<table>OR table:
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p∨q</td>
     </tr>
     <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
-    </tr>
-</table>
-
-<table>OR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p∨q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>T</td>
-
+        <td>T</td>
+        <td>T</td>
+        <td>T</td>
     </tr>
     <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
-    </tr>
-</table>
-<table>NOR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p↓q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>F</td>
-
+        <td>T</td>
+        <td>F</td>
+        <td>T</td>
     </tr>
     <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>T</td>
-
-    </tr>
-</table>
-<table>XOR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p⊻q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>T</td>
-
+        <td>F</td>
+        <td>T</td>
+        <td>T</td>
     </tr>
     <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
     </tr>
 </table>
+Result: <p id="or"></p>
+
+<table>XOR table:
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p⊕q</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>F</td>
+        <td>T</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>T</td>
+        <td>T</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+    </tr>
+</table>
+Result: <p id="xor"></p>
+
+<table>NOR table:
+    <tr>
+        <td>p</td>
+        <td>q</td>
+        <td>p↓q</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>T</td>
+        <td>F</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>T</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>T</td>
+    </tr>
+</table>
+Result: <p id="nor"></p>
 
 <script src="calculations.js"></script>
 
