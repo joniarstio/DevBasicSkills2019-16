@@ -19,7 +19,7 @@
         <span class="heading-primary--main">Mathematical tool System</span>
         <span class="heading-primary--sub"> This program offers six different math functionalities</span>
       </h1>
-      <a href="#section-selector" class="btn btn--enter btn--animated">Clik here to Calculate</a>
+      <a href="#section-selector" class="btn btn--enter btn--animated">Clik here to Start</a>
     </div>
   </header>
 
@@ -37,7 +37,7 @@
               </svg>
               <p class="card__heading-one"> Number system conversion</p>
             </div>
-            <div class="u-center-text u-padding-top-tiny">
+            <div class="u-center-text u-padding-top-medium">
               <a href="#popup" class="btn__popup">Calculate</a>
             </div>
           </div>
@@ -65,7 +65,7 @@
               </svg>
               <p class="card__heading-three"> Number system outputs</p>
             </div>
-            <div class="u-center-text u-padding-top-tiny">
+            <div class="u-center-text u-padding-top-small">
               <a href="#popup-three" class="btn__popup">Calculate</a>
             </div>
           </div>
@@ -109,7 +109,7 @@
               </svg>
               <p class="card__heading-six">Currency Converter</p>
             </div>
-            <div class="u-center-text u-padding-top-tiny">
+            <div class="u-center-text u-padding-top-small">
               <a href="#popup-six" class="btn__popup">Calculate</a>
             </div>
           </div>
@@ -348,59 +348,42 @@
         <div class="popupthree__right">
           <a href="#section-selector" class="popupthree__close">&times;</a>
                <form class="form">
-                 <div class="form__group">
-                      <div class="u-display-inline-block">
-                        <input class="btn__calculate--print" type="button" value="Print Decimal" onclick='printDEC()'/>
-                          </div>
+                 <div class="form__group u-display-inline-block u-padding">
+                        <input class="form__calculate--print" type="button" value="Print Decimal" onclick='printDEC()'/>
                            <div class="table" id="table">
                             <p class="table__output" id="decPrint"></p>
                             </div>
-                           </div>
-
-                        
-                          <div class="form__group">  
-                           <div class="u-display-inline-block">
-                              <input class="btn__calculate--print" type="button" value="Print BIN" onclick='printBIN()'/>
-                               <div class="table" id="table">
-                                <p class="table__output" id="binPrint"></p>
-                                 </div>
-                                </div>
-                             </div> 
-
-                             <div class="form__group">
-                                <div class="u-display-inline-block">
-                                   <input class="btn__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
-                                      <div class="table" id="table">
-                                       <p class="table__output" id="octPrint"></p>
-                                       </div>
-                                     </div>
-                                   </div>
-
-                             <div class="form__group">
-                               <div class="u-display-inline-block">
-                                 <input class="btn__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
-                                  <div class="table" id="table">
-                                  <p class="table__output" id="hexPrint"></p>
-                                 </div>
-                                </div>
+                           </div>                      
+                          <div class="form__group u-display-inline-block u-padding">
+                        <input class="form__calculate--print" type="button" value="Print BIN" onclick='printBIN()'/>
+                      <div class="table" id="table">
+                    <p class="table__output" id="binPrint"></p>
+                  </div>
+                </div>
+                 <div class="form__group u-display-inline-block u-padding">
+                   <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
+                     <div class="table" id="table">
+                       <p class="table__output" id="octPrint"></p>
+                         </div>
+                          </div>
+                          <div class="form__group u-display-inline-block u-padding">
+                         <input class="form__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
+                        <div class="table" id="table">
+                       <p class="table__output" id="hexPrint"></p>
+                     </div>
+                   </div> 
+                  <div class="form__group u-display-inline-block u-padding">  
+                   <input class="form__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
+                     <div class="table" id="table">
+                      <p class="table__output" id="allPrint"></p>
+                        </div>
+                          </div>
+                            <div class="form__group u-display-inline-block u-padding">
+                              <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
                               </div> 
-
-                            <div class="form__group">  
-                              <div class="u-margin-bottom-tiny u-margin-top-medium u-display-inline-block">
-                                 <input class="btn__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
-                                  <div class="table" id="table">
-                                  <p class="table__output" id="allPrint"></p>
-                                 </div>
-                                 </div>
-                                </div>
-                              
-                                <div class="form__group">
-                                 <div class="u-display-inline-block">
-                                  <input class="btn__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
-                              </div>
-                            </div> 
                            </form>
-        </section>
+                       </div>
+                   </section>
 
     <!-- Pop up for Truth Tabels-->
     <section>
@@ -415,68 +398,192 @@
 
           <div class="popupfour__right">
             <a href="#section-selector" class="popupfour__close">&times;</a>
+            <table class="truth-tabels">
+              <h4 class=heading-quatenary--sun">AND</h4>
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p^q</th>
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>T</td>
+                <td>T</td>
+            
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+            
+              </tr>
+              <tr>
+                  <td>F</td>
+                  <td>T</td>
+                  <td>F</td>
+            
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+            
+                </tr>
+            </table>
+            
+            <table class="truth-tabels">
+              <h4 class="heading-quatenary--sub">OR</h4>
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p∨q</th>
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>T</td>
+                <td>T</td>
+            
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>T</td>
+            
+              </tr>
+              <tr>
+                  <td>F</td>
+                  <td>T</td>
+                  <td>T</td>
+            
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+            
+                </tr>
+            </table>
+            <table>NOR
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p↓q</th>
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+            
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+            
+              </tr>
+              <tr>
+                  <td>F</td>
+                  <td>T</td>
+                  <td>F</td>
+            
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>T</td>
+            
+                </tr>
+            </table>
+            <table>XOR
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p⊻q</th>
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+            
+              </tr>
+              <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>T</td>
+            
+              </tr>
+              <tr>
+                  <td>F</td>
+                  <td>T</td>
+                  <td>T</td>
+            
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+            
+                </tr>
+            </table>
 
           </div>
         </div>
       </div>
     </section>
-
     <!-- Pop up for Random Values-->
-
-<section>
-    <div>
+    <section>
+     <div>
       <div class="popupfive" id="popup-five">
         <div class="popupfive__content">
           <h3 class="heading-tertiary">Random Number Generator</h3>
             <div class="popupfive__left">
                <p class="popupfive__text">
                  This mathematical tool tests random number distributions. You can choose any range of numbers and theprogram will show you distrbiution of the numbers.
-          </div>
-
-          <div class="popupfive__right">
-            <a href="#section-selector" class="popupfive__close">&times;</a>
-
-          
-                    <h4 class="heading-quatenary--sub">Choose input type:</h>
-                        <div class="form__group">
+                  </div>
+                   <div class="popupfive__right">
+                     <a href="#section-selector" class="popupfive__close">&times;</a>
+                       <h4 class="heading-quatenary--sub">Choose input type:</h>
+                         <div class="form__group">
                           <div class="form__radio-group">
-                            <p class="form__radio-group u-margin-bottom-small">Options</p>
-                           <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="optionsSel" checked="checked" type="radio">
-                             Individual rows 
-                             </div>
-                             <div class="form__radio-group">
-                             <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="," type="radio">
-                             Separated by a comma
-                            </div>
-                          </div>    
-                           <h4 class="heading-quatenary--sub">How many numbers</h4>
-                            <div class="u-margin-bottom-small">
-                              <form class="form">
-                                 <input class="form__input" type="text" id="qtyNumbers" name="qtyNumbers" value="1"/>
-                                 </form></div>
-                                 <h4 class="heading-quatenary--sub">Rangin from</h4>
-                                  <form class="form">
-                                   <input class="form__input" type="text" id="minNumber" name="minNumber" value="1"/>
-                                  </form> 
-                                   <h4 class="heading-quatenary--sub">to</h4>
-                                  <div class="u-margin-bottom-small">
-                                 <form class="form">
-                                <input class="form__input" type="text" id="maxNumber" name="maxNumber"value="10">
-                               </form>
-                              </div>
-                              <div class="u-margin-bottom-medium u-padding-top-big">
-                              <h4 class="heading-quatenary u-padding-top-medium">Distribution results</h4>
-                             <div class="textarea">
-                             <textarea class="textarea__input" id="resultNumber" name="resultNumber" rows="10" cols="20"></textarea>
-                            </div>
-                              </div>
-                           <input type="button" class="btn__calculate" id="calculateBtn" name="calculateBtn" value="Generate Random Number">
-                        <input type="button" class="btn__calculate" name="resetBtn" id="resetBtn" value="Reset"></p>
-                   </div> 
+                          <p class="form__radio-group u-margin-bottom-small">Options</p>
+                          <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="optionsSel" checked="checked" type="radio">
+                          Individual rows 
+                          </div>
+                          <div class="form__radio-group">
+                        <input name="optionsSelect" class="optionsSelect" id="optionsSel" value="," type="radio">
+                        Separated by a comma
+                       </div>
+                      </div>    
+                     <h4 class="heading-quatenary--sub">How many numbers</h4>
+                    <div class="u-margin-bottom-small">
+                   <form class="form">
+                 <input class="form__input" type="text" id="qtyNumbers" name="qtyNumbers" value="1"/>
+               </form></div>
+             <h4 class="heading-quatenary--sub">Rangin from</h4>
+            <form class="form">
+          <input class="form__input" type="text" id="minNumber" name="minNumber" value="1"/>
+         </form> 
+       <h4 class="heading-quatenary--sub">to</h4>
+     <div class="u-margin-bottom-small">
+    <form class="form">
+     <input class="form__input" type="text" id="maxNumber" name="maxNumber"value="10">
+      </form>
+       </div>
+         <div class="u-margin-bottom-medium u-padding-top-big">
+           <h4 class="heading-quatenary u-padding-top-medium">Distribution results</h4>
+             <div class="textarea">
+               <textarea class="textarea__input" id="resultNumber" name="resultNumber" rows="10" cols="20"></textarea>
                 </div>
-
+                  </div>
+                  <div class="form__group">
+                  <form class="form">
+                 <input type="button" class="form__calculate--print" id="calculateBtn" name="calculateBtn" value="Generate Random Number">
+                <input type="button" class="form__calculate--print" name="resetBtn" id="resetBtn" value="Reset">
+              </form>
+            </div>
+          </div> 
+        </div>
     </section>
-
     <!-- Pop up for Currency Converter-->
     <section>
       <div class="popupsix" id="popup-six">
@@ -587,145 +694,16 @@
             <option value="USD">United States dollar (US$) </option>		
             </select>
             <br />
-          </div> 
-            
-            <h4 class="heading-quatenary--sub">In selected currency:</h4>
-            <input class="form__input" type="number" class="form-control" id="value4" disabled="disabled"/>
-            </div>
-            
+           </div> 
+             <h4 class="heading-quatenary--sub">In selected currency:</h4>
+             <input class="form__input" type="number" class="form-control" id="value4" disabled="disabled"/>
+            </div>           
           </div>
         </div>
       </div>
     </section>
 
 </body>
-
-
-<table>AND
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p^q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>F</td>
-
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
-    </tr>
-</table>
-
-<table>OR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p∨q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>T</td>
-
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
-    </tr>
-</table>
-<table>NOR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p↓q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>F</td>
-
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>T</td>
-
-    </tr>
-</table>
-<table>XOR
-  <tr>
-    <th>p</th>
-    <th>q</th>
-    <th>p⊻q</th>
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>T</td>
-    <td>F</td>
-
-  </tr>
-  <tr>
-    <td>T</td>
-    <td>F</td>
-    <td>T</td>
-
-  </tr>
-  <tr>
-      <td>F</td>
-      <td>T</td>
-      <td>T</td>
-
-    </tr>
-    <tr>
-      <td>F</td>
-      <td>F</td>
-      <td>F</td>
-
-    </tr>
-</table>
 
 <script src="calculations.js"></script>
 
