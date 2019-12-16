@@ -129,28 +129,64 @@ document.getElementById("maxNumber").addEventListener("keyup", function (){
 
 //Start random generation
 document.getElementById("calculateBtn").addEventListener("click", function (){
-        var optionsSelect = document.querySelector('.optionsSelect:checked').value;
-        var qty = document.getElementById("qtyNumbers").value;
-        var min = document.getElementById("minNumber").value;
-        var max = document.getElementById("maxNumber").value;
-        var randomNumber;
-        var randoms = "";
-            for (var i = 0; i < qty;){
-                 randomNumber = Math.floor(Math.random() * (+max - +min) + +min);
-                    if(i + 1 == qty){
-                       randoms = randoms + randomNumber; 
-                    }	
-                    else{
-                        if(optionsSelect === "optionsSel"){
-                            randoms = randoms + randomNumber + '\r\n';
+    var optionsSelect = document.querySelector('.optionsSelect:checked').value;
+    var qty = document.getElementById("qtyNumbers").value;
+    var min = document.getElementById("minNumber").value;
+    var max = document.getElementById("maxNumber").value;
+    var randomNumber;
+    var randomNumbers = [];
+    var distributionNumbers = [];
+    var randoms = "";
+        for (var i = 0; i < qty;){
+             randomNumber = Math.floor(Math.random() * (+max - +min) + +min);
+                if(i + 1 == qty){
+                   randoms = randoms + randomNumber;
+                  
+                }	
+                else{
+                    if(optionsSelect === "optionsSel"){
+                        randoms = randoms + randomNumber + '\r\n';
+                    }
+                else{
+                    randoms = randoms + randomNumber + optionsSelect;
+                }
+                }
+                randomNumbers.push(randomNumber);
+                    i++;
+            }		
+                  
+                    
+                    randomNumbers.sort();
+                   
+                    for (let i = 0; i<qty;i++)
+                    { var counter = 0;
+
+                        for (let j=0; j<randomNumbers.length; j++)
+                        {
+                           
+                            if (randomNumbers[i] == randomNumbers[j])
+                            {   
+                                counter++;
+
+                            }
+                            distributionNumbers[i] = counter;
                         }
-                    else{
-                        randoms = randoms + randomNumber + optionsSelect;
+
+                        
                     }
+                    
+                   randoms = "";
+                    for (let i=0; i<qty; i++)
+                    {
+                        var percentagetotal = Number(100/qty) *  distributionNumbers[i];
+                        percentage = percentagetotal.toFixed(2);
+
+                        randoms = randoms + randomNumbers[i] + " (" +  percentage + "%) ";
                     }
-                        i++;
-                }		
-                        document.getElementById("resultNumber").value = randoms;
+
+                  
+
+                    document.getElementById("resultNumber").value = randoms;
 });
 
 //Reset
