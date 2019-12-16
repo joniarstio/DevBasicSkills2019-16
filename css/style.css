@@ -158,7 +158,7 @@ body {
   display: inline-block !important; }
 
 .u-padding {
-  padding: 10rem 4rem 1rem !important; }
+  padding: 1.9rem 1rem 1rem !important; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -440,7 +440,6 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
-    display: tabel;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
@@ -553,7 +552,8 @@ body {
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s; }
+  transition: all .3s;
+  display: tabel; }
   .popupthree__content {
     position: absolute;
     top: 50%;
@@ -564,7 +564,6 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
-    display: tabel;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
@@ -575,6 +574,7 @@ body {
     width: 70.0000000%;
     float: right;
     text-align: center;
+    display: inline-block;
     padding-top: 10rem 5rem 0 0; }
   .popupthree__text {
     font-size: 2rem;
