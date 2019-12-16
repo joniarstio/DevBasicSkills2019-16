@@ -129,7 +129,7 @@ document.getElementById("maxNumber").addEventListener("keyup", function (){
 
 //Start random generation
 document.getElementById("calculateBtn").addEventListener("click", function (){
-    var optionsSelect = document.querySelector('.optionsSelect:checked').value;
+        
     var qty = document.getElementById("qtyNumbers").value;
     var min = document.getElementById("minNumber").value;
     var max = document.getElementById("maxNumber").value;
@@ -143,14 +143,7 @@ document.getElementById("calculateBtn").addEventListener("click", function (){
                    randoms = randoms + randomNumber;
                   
                 }	
-                else{
-                    if(optionsSelect === "optionsSel"){
-                        randoms = randoms + randomNumber + '\r\n';
-                    }
-                else{
-                    randoms = randoms + randomNumber + optionsSelect;
-                }
-                }
+
                 randomNumbers.push(randomNumber);
                     i++;
             }		
