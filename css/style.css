@@ -39,9 +39,9 @@ body {
     animation: moveInBottom 2s ease-out; }
   .heading-primary--sub {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    letter-spacing: 1.7rem;
+    letter-spacing: 1rem;
     animation: moveInBottom 3s ease-out;
     padding-bottom: 1rem; }
 
@@ -436,7 +436,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 83%;
-    height: 75%;
+    height: 90%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
@@ -560,7 +560,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 83%;
-    height: 70%;
+    height: 80%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
