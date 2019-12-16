@@ -1,16 +1,56 @@
 //STYLING FOR THE OUTPUT HEX, DEC, OCATL AND BINARY NUBERS
 
 .table {
-   padding-top: 6rem;
+   padding-top: 10rem;
+
   
     &__output {
+        display: table;
+        table-layout: fixed;
+        column-count: 3;
+        font-size: 1.2rem;
+        color: $color-dark-blue;
+      
+
+    &--bin {
         display: table-cell;
         column-count: 3;
         font-size: 1.2rem;
         color: $color-dark-blue;
-        
+        padding-right: 10rem;
+    } 
+     
+    &--oct {
+        display: table-cell;
+        column-count: 3;
+        font-size: 1.2rem;
+        color: $color-dark-blue;
+        padding-right: 1rem;
+
     }
+
+    &--hex {
+        display: table-cell;
+        column-count: 3;
+        font-size: 1.2rem;
+        color: $color-dark-blue;
+        padding-right: 1rem;
+
+    }
+
+    &--dec {
+        display: table-cell;
+        column-count: 3;
+        font-size: 1.2rem;
+        color: $color-dark-blue;
+        padding-right: 1rem;
+
+    }
+
+}
     
+
+        
     //TRUTH LOOK TABELS STYILING
     &__truth {
         display: block;
@@ -18,10 +58,6 @@
         column-count: 3;
         font-size: 2rem;
         color: $color-dark-blue;
-     
-     &--td {
-
-     }
-
+  
     }
 }

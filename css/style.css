@@ -158,7 +158,7 @@ body {
   display: inline-block !important; }
 
 .u-padding {
-  padding: 1.9rem 1rem 1rem !important; }
+  padding: 1rem 11rem 0 1rem !important; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -552,8 +552,7 @@ body {
   z-index: 999;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
-  display: tabel; }
+  transition: all .3s; }
   .popupthree__content {
     position: absolute;
     top: 50%;
@@ -568,16 +567,16 @@ body {
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
   .popupthree__left {
-    width: 30.0000000%;
+    width: 20.0000000%;
     float: left; }
   .popupthree__right {
-    width: 70.0000000%;
+    width: 80.0000000%;
     float: right;
     text-align: center;
     display: inline-block;
     padding-top: 10rem 5rem 0 0; }
   .popupthree__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 2rem .5rem 0 5rem; }
   .popupthree:target {
     opacity: 1;
@@ -599,12 +598,37 @@ body {
     color: #253840; }
 
 .table {
-  padding-top: 6rem; }
+  padding-top: 10rem; }
   .table__output {
-    display: table-cell;
+    display: table;
+    table-layout: fixed;
     column-count: 3;
     font-size: 1.2rem;
     color: #253840; }
+    .table__output--bin {
+      display: table-cell;
+      column-count: 3;
+      font-size: 1.2rem;
+      color: #253840;
+      padding-right: 10rem; }
+    .table__output--oct {
+      display: table-cell;
+      column-count: 3;
+      font-size: 1.2rem;
+      color: #253840;
+      padding-right: 1rem; }
+    .table__output--hex {
+      display: table-cell;
+      column-count: 3;
+      font-size: 1.2rem;
+      color: #253840;
+      padding-right: 1rem; }
+    .table__output--dec {
+      display: table-cell;
+      column-count: 3;
+      font-size: 1.2rem;
+      color: #253840;
+      padding-right: 1rem; }
   .table__truth {
     display: block;
     display: table-cell;

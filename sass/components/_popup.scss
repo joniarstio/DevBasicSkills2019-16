@@ -104,8 +104,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-    display: tabel;
-
 
    &__content {
      @include absCenter;  
@@ -117,18 +115,16 @@
      opacity: 0;
      transform: translate(-50%, -50%) scale(.5);
      transition: all .4s .2s;
-
-
    }
    
 
    &__left {
-       width: 30.0000000%;
+       width: 20.0000000%;
        float: left;
    }
 
    &__right {
-       width: 70.0000000%;
+       width: 80.0000000%;
        float: right;
        text-align: center;
        display: inline-block;
@@ -137,7 +133,7 @@
    }
 
    &__text {
-       font-size: 2rem;
+       font-size: 1.6rem;
        padding: 2rem .5rem 0 5rem;
 
    }

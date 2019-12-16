@@ -296,42 +296,46 @@
           <a href="#section-selector" class="popupthree__close">&times;</a>
                <form class="form" id="tableHide">
                 
-                 <div class="form__group u-display-inline-block u-padding">
+              
+                 <div class="form__group u-display-inline-block">
+                   <div class=" u-padding">
                         <input class="form__calculate--print" type="button" value="Print Decimal" onclick='printDEC()'/>
+                           </div>
                            <div class="table">
-                            <p class="table__output" id="decPrint"></p>
+                            <p class="table__output--dec" id="decPrint"></p>
                             </div>
                            </div>                      
-                          <div class="form__group u-display-inline-block u-padding">
+                          <div class="form__group u-display-inline-block">
+                            <div class="u-padding">
                         <input class="form__calculate--print" type="button" value="Print BIN" onclick='printBIN()'/>
+                        </div>
                       <div class="table">
-                    <p class="table__output" id="binPrint"></p>
+                    <p class="table__output--bin" id="binPrint"></p>
                   </div>
                 </div>
-                 <div class="form__group u-display-inline-block u-padding">
-                   <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
-                     <div class="table">
-                       <p class="table__output" id="octPrint"></p>
+                    <div class="form__group u-display-inline-block">
+                      <div class="u-padding">
+                        <input class="form__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
+                            </div>
+                           <div class="table">
+                          <p class="table__output--hex" id="hexPrint"></p>
                          </div>
-                          </div>
-                          <div class="form__group u-display-inline-block u-padding">
-                         <input class="form__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
-                        <div class="table">
-                       <p class="table__output" id="hexPrint"></p>
+                         </div> 
+                 <div class="form__group u-display-inline-block">
+                   <div class="u-padding">
+                   <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
                      </div>
-                   </div> 
-                  <div class="form__group u-display-inline-block u-padding">  
-                   <input class="form__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
+                     <div class="table">
+                       <p class="table__output--oct" id="octPrint"></p>
+                         </div>
+                          </div>     
+                        </form>
+                       </div>
+                       <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
+                       <input class="form__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
                      <div class="table">
                       <p class="table__output" id="allPrint"></p>
                         </div>
-                          </div>
-                            <div class="form__group u-display-inline-block u-padding">
-                              
-                              </div> 
-                           </form>
-                       </div>
-                       <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
                    </section>
 
     <!-- Pop up for Truth Tabels-->
