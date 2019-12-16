@@ -119,6 +119,7 @@ body {
      .textarea {
         &__group:not(:last-child) {
             margin-bottom: 1rem;
+           
         }
     
         &__input {
@@ -127,7 +128,8 @@ body {
             border-radius: 2px;
             background-color: rgba($color-grey, .5);
             border-bottom: 3px solid transparent;
-            width: 19%;
+            width: 60%;
+            
 
           
         }
