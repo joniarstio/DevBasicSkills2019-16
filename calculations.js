@@ -211,11 +211,51 @@ function combination(n, r){
       return factorial(n) / (factorial(r) * factorial(n - r));
     };
   
-document.getElementById('calculate').onclick = function(){
-    var n = parseFloat(document.getElementById('n').value),
-        r = parseFloat(document.getElementById('r').value);
+document.getElementById('calculateComb').onclick = function(){
+    var n = parseFloat(document.getElementById('nC').value),
+        r = parseFloat(document.getElementById('rC').value);
           if ( n && r ){
-              document.getElementById('result').innerHTML = combination(n,r);
+              document.getElementById('resultComb').innerHTML = combination(n,r);
+    }
+  };
+  
+function permutation(n, r){
+    if(n == r) return 1;
+      return factorial(n) / factorial(n - r);
+    };
+  
+document.getElementById('calculatePerm').onclick = function(){
+    var n = parseFloat(document.getElementById('nP').value),
+        r = parseFloat(document.getElementById('rP').value);
+          if ( n && r ){
+              document.getElementById('resultPerm').innerHTML = permutation(n,r);
+    }
+  };
+
+
+  function permutationWO(n, r){
+    if(n == r) return 1;
+      return Math.pow(n, r);
+    };
+  
+document.getElementById('calculatePermWO').onclick = function(){
+    var n = parseFloat(document.getElementById('nPWO').value),
+        r = parseFloat(document.getElementById('rPWO').value);
+          if ( n && r ){
+              document.getElementById('resultPermWO').innerHTML = permutationWO(n,r);
+    }
+  };
+
+  function combinationWO(n, r){
+    if(n == r) return 1;
+      return factorial(n+r-1) / factorial(r) / factorial(n-1);
+    };
+  
+document.getElementById('calculateCombWO').onclick = function(){
+    var n = parseFloat(document.getElementById('nCWO').value),
+        r = parseFloat(document.getElementById('rCWO').value);
+          if ( n && r ){
+              document.getElementById('resultCombWO').innerHTML = combinationWO(n,r);
     }
   };
 

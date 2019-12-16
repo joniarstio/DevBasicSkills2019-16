@@ -256,30 +256,75 @@
       <div class="popuptwo__content">
         <h3 class="heading-tertiary">Combinatorics</h3>
         <div class="popuptwo__left">
-          <p class="popuptwo__text">Combinations Calculator will find the number of possible combinations when taken sample from large set. "N" value represent objects in large set and "R" value represents amount of samples taken from the larger set.</p>
-        </div>
-
-        <div class="popuptwo__right">
-          <a href="#section-selector" class="popuptwo__close">&times;</a>
-                 <div class="u-padding-left-medium">
-                        <h4 class="heading-quatenary--sub">C(n,r):</h4>
-                         <div class="u-display-inline-block">
-                           <form class="from">
-                            <input type="text" class="form__input" placeholder="n" id="n" />
+          <p class="popuptwo__text">CCombinations Calculator will find the number of possible combinations when taken sample from large set. "N" value represent objects in large set and "R" value represents amount of samples taken from the larger set.<br /><br />A permutation is an arrangement of all or part of a set of objects, with regard to the order of the arrangement.</p>
+            </div>
+              <div class="popuptwo__right">
+                <a href="#section-selector" class="popuptwo__close">&times;</a>
+                  <div class="u-padding-left-medium">
+                    <h2 class="heading-quatenary--sub">Combinations Calculator</h2>
+                      <h4 class="heading-quatenary--sub">C(n,r) repetition is allowed:</h4>
+                        <div class="u-display-inline-block">
+                          <form class="from">
+                            <input type="text" class="form__input" placeholder="n" id="nCWO" />
+                              </form>
+                                </div> 
+                              <div class="u-display-inline-block"> 
+                            <form class="from">
+                          <input type="text" class="form__input" placeholder="r" id="rCWO" />
+                        </form>
+                      </div> 
+                    <btn class="btn__calculate" id="calculateCombWO">Calculate</btn>
+                  <h4 class="heading-quatenary--combresult" id="resultCombWO">Result:</h4>
+                </div>
+                  
+                <div class="u-padding-left-medium">                
+                  <h4 class="heading-quatenary--sub">C(n,r) repetition not allowed:</h4>
+                    <div class="u-display-inline-block">
+                      <form class="from">
+                        <input type="text" class="form__input" placeholder="n" id="nC" />
+                          </form>
+                            </div> 
+                          <div class="u-display-inline-block"> 
+                        <form class="from">
+                      <input type="text" class="form__input" placeholder="r" id="rC" />
+                    </form>
+                  </div> 
+                <btn class="btn__calculate" id="calculateComb">Calculate</btn>
+              <h4 class="heading-quatenary--combresult" id="resultComb">Result:</h4>
+            </div>    
+                    
+                <div class="u-padding-left-medium">
+                  <h2 class="heading-quatenary--sub">Permutations Calculator</h2>
+                    <h4 class="heading-quatenary--sub">P(n,r) repetition is allowed:</h4>
+                      <div class="u-display-inline-block">
+                        <form class="from">
+                          <input type="text" class="form__input" placeholder="n" id="nPWO" />
                             </form>
                              </div> 
-                              <div class="u-display-inline-block"> 
-                              <form class="from">
-                             <input type="text" class="form__input" placeholder="r" id="r" />
-                            </form>
-                          </div> 
-                          <btn class="btn__calculate" id="calculate">Calculate</btn>
-                       <h4 class="heading-quatenary--combresult" id="result">Result:</h4>
-                   </div>      
-                 </div>
-              </div>
-             </div>
-     </section>
+                            <div class="u-display-inline-block"> 
+                          <form class="from">
+                        <input type="text" class="form__input" placeholder="r" id="rPWO" />
+                      </form>
+                    </div> 
+                  <btn class="btn__calculate" id="calculatePermWO">Calculate</btn>
+                <h4 class="heading-quatenary--combresult" id="resultPermWO">Result:</h4>
+              </div> 
+               
+                <div class="u-padding-left-medium">
+                  <h4 class="heading-quatenary--sub">P(n,r) repetition not allowed:</h4>
+                    <div class="u-display-inline-block">
+                      <form class="from">
+                        <input type="text" class="form__input" placeholder="n" id="nP" />
+                          </form>
+                            </div> 
+                          <div class="u-display-inline-block"> 
+                        <form class="from">
+                      <input type="text" class="form__input" placeholder="r" id="rP" />
+                    </form>
+                  </div> 
+                <btn class="btn__calculate" id="calculatePerm">Calculate</btn>
+              <h4 class="heading-quatenary--combresult" id="resultPerm">Result:</h4>   
+            </section>
 
   <!-- Pop up for number system outputs-->
   <section>
@@ -288,7 +333,7 @@
          <h3 class="heading-tertiary">Number system outputs of DEC, BIN, OCT and HEX.</h3>
         <div class="popupthree__left">
           <p class="popupthree__text">
-            These tabels prints numercial systems showing decimal numbers rangin from 0-50 in binary number, ocat numbers and hexadecimal numbers. You can print each tabel individually or all the tabels all at once.
+            These tables prints numercial systems showing decimal numbers rangin from 0-50 in binary number, ocat numbers and hexadecimal numbers. You can print each table individually or all the tables all at once.
           </p>
         </div>
 
@@ -338,11 +383,11 @@
                         </div>
                    </section>
 
-    <!-- Pop up for Truth Tabels-->
+    <!-- Pop up for Truth Tables-->
     <section>
       <div class="popupfour" id="popup-four">
         <div class="popupfour__content">
-          <h3 class="heading-tertiary">Truth tabels</h3>
+          <h3 class="heading-tertiary">Truth tables</h3>
           <div class="popupfour__left">
             <p class="popupfour__text">
               This function calculates basic set of truth tables for basic operations.
@@ -351,7 +396,7 @@
 
           <div class="popupfour__right">
             <a href="#section-selector" class="popupfour__close">&times;</a>
-            <table class="truth-tabels">
+            <table class="truth-tables">
               <div class="from__group">
                 <form class="form">
                 <h4 class="heading-quatenary--sub">Input Truth and False values</h4>
@@ -361,7 +406,7 @@
              </form>
             </div>  
           <h4 class="heading-quatenary--sub">AND table</h4> 
-            <table class="tabel__truth">
+            <table class="table__truth">
               <td>p</td>
               <td>q</td>
               <td>p^q</td>
@@ -390,10 +435,10 @@
            <p class="p__result--truth" id="and">Result</p>
 
           
-           <table class="tabel__truth">
+           <table class="table__truth">
             <h4 class="heading-quatenary--sub">OR table</h4>
                <tr>
-                 <td class="tabel__truth--td">p</td>
+                 <td class="table__truth--td">p</td>
                  <td>q</td>
                  <td>p∨q</td>
                </tr>
@@ -423,7 +468,7 @@
 <div class="u-padding-top-large">
 <h4 class="heading-quatenary--sub">XOR table</h4>
 </div>
-<table class="tabel__truth">
+<table class="table__truth">
     <tr>
         <td>p</td>
         <td>q</td>
@@ -453,7 +498,7 @@
 <p class="p__result--truth" id="xor">Result</p>
 
 <h4 class="heading-quatenary--sub">NOR table</h4>
-<table class="tabel__truth">
+<table class="table__truth">
     <tr>
         <td>p</td>
         <td>q</td>
@@ -536,7 +581,7 @@
           <h3 class="heading-tertiary">Currency Converter</h3>
           <div class="popupsix__left">
             <p class="popupsix__text">
-               This is currecny converter. It will convert currencies from euro or to euros.
+               This is currency converter. It will convert currencies from euro or to euros.
             </p>
           </div>
 
