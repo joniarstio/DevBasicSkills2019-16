@@ -58,7 +58,7 @@ function oct_to_dec() {
 
 // Function for 'hide table' button to toggle hide/show
 function hideTable() {
-    var hide_show = document.getElementById("table");
+    var hide_show = document.getElementById("tableHide");
         if (hide_show.style.display === "none") {
             hide_show.style.display = "block";
             } 

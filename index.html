@@ -294,42 +294,44 @@
 
         <div class="popupthree__right">
           <a href="#section-selector" class="popupthree__close">&times;</a>
-               <form class="form">
+               <form class="form" id="tableHide">
+                
                  <div class="form__group u-display-inline-block u-padding">
                         <input class="form__calculate--print" type="button" value="Print Decimal" onclick='printDEC()'/>
-                           <div class="table" id="table">
+                           <div class="table">
                             <p class="table__output" id="decPrint"></p>
                             </div>
                            </div>                      
                           <div class="form__group u-display-inline-block u-padding">
                         <input class="form__calculate--print" type="button" value="Print BIN" onclick='printBIN()'/>
-                      <div class="table" id="table">
+                      <div class="table">
                     <p class="table__output" id="binPrint"></p>
                   </div>
                 </div>
                  <div class="form__group u-display-inline-block u-padding">
                    <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
-                     <div class="table" id="table">
+                     <div class="table">
                        <p class="table__output" id="octPrint"></p>
                          </div>
                           </div>
                           <div class="form__group u-display-inline-block u-padding">
                          <input class="form__calculate--print" type="button" value="Print HEX" onclick='printHEX()'/>
-                        <div class="table" id="table">
+                        <div class="table">
                        <p class="table__output" id="hexPrint"></p>
                      </div>
                    </div> 
                   <div class="form__group u-display-inline-block u-padding">  
                    <input class="form__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
-                     <div class="table" id="table">
+                     <div class="table">
                       <p class="table__output" id="allPrint"></p>
                         </div>
                           </div>
                             <div class="form__group u-display-inline-block u-padding">
-                              <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
+                              
                               </div> 
                            </form>
                        </div>
+                       <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
                    </section>
 
     <!-- Pop up for Truth Tabels-->
