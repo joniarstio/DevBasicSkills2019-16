@@ -206,18 +206,18 @@
               </div>
            </div>
 
-        <div class="converter__form">
-          <h4 class="heading-quatenary--sub">Insert decimal number</h4>
-          <form class="form">
-            <div class="form__group">
-              <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required />
+           <div class="converter__form">
+             <h4 class="heading-quatenary--sub">Insert decimal number</h4>
+              <form class="form">
+               <div class="form__group">
+               <input type="text" class="form__input" placeholder="to hexadecimal" id="input3" required />
               <p class="p__result" id="result3"></p>
-          </form>
-          <div class="u-padding-top-tiny">
-            <btn class="btn__calculate" onclick="dec_to_hex()">Calculate</btn>
-            <div>
-            </div>
+               </form>
+              <div class="u-padding-top-tiny">
+             <btn class="btn__calculate" onclick="dec_to_hex()">Calculate</btn>
+           <div>
           </div>
+      </div>
 
       <div class="converter__form">
       <h4 class="heading-quatenary--sub">Insert hexadecimal number</h4>
@@ -256,7 +256,7 @@
       <div class="popuptwo__content">
         <h3 class="heading-tertiary">Combinatorics</h3>
         <div class="popuptwo__left">
-          <p class="popuptwo__text">CCombinations Calculator will find the number of possible combinations when taken sample from large set. "N" value represent objects in large set and "R" value represents amount of samples taken from the larger set.<br /><br />A permutation is an arrangement of all or part of a set of objects, with regard to the order of the arrangement.</p>
+          <p class="popuptwo__text">Combinations Calculator will find the number of possible combinations when taken sample from large set. "N" value represent objects in large set and "R" value represents amount of samples taken from the larger set.<br /><br />A permutation is an arrangement of all or part of a set of objects, with regard to the order of the arrangement.</p>
             </div>
               <div class="popuptwo__right">
                 <a href="#section-selector" class="popuptwo__close">&times;</a>
@@ -273,7 +273,9 @@
                           <input type="text" class="form__input" placeholder="r" id="rCWO" />
                         </form>
                       </div> 
+                      <div class="btn u-padding-top-small">
                     <btn class="btn__calculate" id="calculateCombWO">Calculate</btn>
+                      </div>
                   <h4 class="heading-quatenary--combresult" id="resultCombWO">Result:</h4>
                 </div>
                   
@@ -288,8 +290,10 @@
                         <form class="from">
                       <input type="text" class="form__input" placeholder="r" id="rC" />
                     </form>
-                  </div> 
+                  </div>
+                  <div class="btn u-padding-top-small">
                 <btn class="btn__calculate" id="calculateComb">Calculate</btn>
+                  </div>
               <h4 class="heading-quatenary--combresult" id="resultComb">Result:</h4>
             </div>    
                     
@@ -305,8 +309,10 @@
                           <form class="from">
                         <input type="text" class="form__input" placeholder="r" id="rPWO" />
                       </form>
-                    </div> 
+                    </div>
+                    <div class="btn u-padding-top-small">
                   <btn class="btn__calculate" id="calculatePermWO">Calculate</btn>
+                 </div>
                 <h4 class="heading-quatenary--combresult" id="resultPermWO">Result:</h4>
               </div> 
                
@@ -321,8 +327,10 @@
                         <form class="from">
                       <input type="text" class="form__input" placeholder="r" id="rP" />
                     </form>
-                  </div> 
+                  </div>
+                  <div class="btn u-padding-top-small"> 
                 <btn class="btn__calculate" id="calculatePerm">Calculate</btn>
+               </div>
               <h4 class="heading-quatenary--combresult" id="resultPerm">Result:</h4>   
             </section>
 
@@ -366,22 +374,22 @@
                           <p class="table__output--hex" id="hexPrint"></p>
                          </div>
                          </div> 
-                 <div class="form__group u-display-inline-block">
-                   <div class="u-padding">
-                   <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
-                     </div>
-                     <div class="table">
-                       <p class="table__output--oct" id="octPrint"></p>
+                         <div class="form__group u-display-inline-block">
+                         <div class="u-padding">
+                           <input class="form__calculate--print" type="button" value="Print OCT" onclick='printOCT()'/>
+                            </div>
+                             <div class="table">
+                            <p class="table__output--oct" id="octPrint"></p>
                          </div>
-                          </div>     
-                        </form>
+                        </div>     
+                       </form>
                        </div>
                        <input class="form__calculate--print" type="button" value="Hide/show table" onclick="hideTable()"/>
                        <input class="form__calculate--print" type="button" value="Print ALL" onclick='printHEX(), printOCT(), printBIN(), printDEC()'/>
-                     <div class="table">
-                      <p class="table__output" id="allPrint"></p>
-                        </div>
-                   </section>
+                      <div class="table">
+                     <p class="table__output" id="allPrint"></p>
+                   </div>
+                 </section>
 
     <!-- Pop up for Truth Tables-->
     <section>
@@ -397,140 +405,146 @@
           <div class="popupfour__right">
             <a href="#section-selector" class="popupfour__close">&times;</a>
             <table class="truth-tables">
-              <div class="from__group">
-                <form class="form">
-                <h4 class="heading-quatenary--sub">Input Truth and False values</h4>
-                   <input class="form__input--truth" type="number" id="trueFirst" value="0" min="0" max="1" onchange="truthTable();"/>
-                 <input class="form__input--truth" type="number" id="trueSecond" value="0" min="0" max="1" onchange="truthTable();"/>
-              <br/>
-             </form>
-            </div>  
-          <h4 class="heading-quatenary--sub">AND table</h4> 
-            <table class="table__truth">
-              <td>p</td>
-              <td>q</td>
-              <td>p^q</td>
-             </tr>
-              <tr>
-               <td>T</td>
-               <td>T</td>
-               <td>T</td>
-             </tr>
-             <tr>
-               <td>T</td>
-               <td>F</td>
-              <td>F</td>
-             </tr>
-             <tr>
-               <td>F</td>
-               <td>T</td>
-               <td>F</td>
-             </tr>
-             <tr>
-               <td>F</td>
-               <td>F</td>
-               <td>F</td>
-             </tr>
-           </table>
-           <p class="p__result--truth" id="and">Result</p>
+                <div class="from__group">
+                    <form class="form">
+                        <h4 class="heading-quatenary--sub">Input Truth and False values</h4>
+                        <input class="form__input--truth" type="number" id="trueFirst" value="0" min="0" max="1" onchange="truthTable();" />
+                        <input class="form__input--truth" type="number" id="trueSecond" value="0" min="0" max="1" onchange="truthTable();" />
+                        <br/>
+                    </form>
+                </div>
+                <h4 class="heading-quatenary--sub">AND table</h4>
+                <table class="table__truth">
+                    <tr>
+                        <td class="table__truth--value">p</td>
+                        <td class="table__truth--value">q</td>
+                        <td class="table__truth--value">p^q</td>
+                    </tr>
+        
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+        
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+        
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+        
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+        
+                </table>
+                <p class="p__result--truth" id="and">Result</p>
+        
+                <h4 class="heading-quatenary--sub">OR table</h4>
+                <table class="table__truth">
+                    <tr>
+                        <td class="table__truth--value">p</td>
+                        <td class="table__truth--value">q</td>
+                        <td class="table__truth--value">p∨q</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                    <tr>
+        
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                </table>
+                <p class="p__result--truth" id="or">Result</p>
+        
+                <div class="u-padding-top-large">
+                    <h4 class="heading-quatenary--sub">XOR table</h4>
+                </div>
+                <table class="table__truth">
+                    <tr>
+                        <td class="table__truth--value">p</td>
+                        <td class="table__truth--value">q</td>
+                        <td class="table__truth--value">p⊕q</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                </table>
+                <p class="p__result--truth" id="xor">Result</p>
+        
+                <h4 class="heading-quatenary--sub">NOR table</h4>
+                <table class="table__truth">
+                    <tr>
+                        <td class="table__truth--value">p</td>
+                        <td class="table__truth--value">q</td>
+                        <td class="table__truth--value">p↓q</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                        <td class="table__truth--value">F</td>
+                    </tr>
+                    <tr>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">F</td>
+                        <td class="table__truth--value">T</td>
+                    </tr>
+                </table>
+                <div class="u-margin-bottom-medium">
+                <p class="p__result--truth" id="nor">Result</p>
+    </div> 
+  </div>
+</section>
 
-          
-           <table class="table__truth">
-            <h4 class="heading-quatenary--sub">OR table</h4>
-               <tr>
-                 <td class="table__truth--td">p</td>
-                 <td>q</td>
-                 <td>p∨q</td>
-               </tr>
-                <tr>
-                 <td>T</td>
-                 <td>T</td>
-                 <td>T</td>
-                </tr>
-                <tr>
-                 <td>T</td>
-                 <td>F</td>
-                 <td>T</td>
-                </tr>
-                <tr>
-                 <td>F</td>
-                 <td>T</td>
-                 <td>T</td>
-                </tr>
-                <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>F</td>
-    </tr>
-</table>
-<p class="p__result--truth" id="or">Result</p>
-
-<div class="u-padding-top-large">
-<h4 class="heading-quatenary--sub">XOR table</h4>
-</div>
-<table class="table__truth">
-    <tr>
-        <td>p</td>
-        <td>q</td>
-        <td>p⊕q</td>
-    </tr>
-    <tr>
-        <td>T</td>
-        <td>T</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td>T</td>
-        <td>F</td>
-        <td>T</td>
-    </tr>
-    <tr>
-        <td>F</td>
-        <td>T</td>
-        <td>T</td>
-    </tr>
-    <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>F</td>
-    </tr>
-</table>
-<p class="p__result--truth" id="xor">Result</p>
-
-<h4 class="heading-quatenary--sub">NOR table</h4>
-<table class="table__truth">
-    <tr>
-        <td>p</td>
-        <td>q</td>
-        <td>p↓q</td>
-    </tr>
-    <tr>
-        <td>T</td>
-        <td>T</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td>T</td>
-        <td>F</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td>F</td>
-        <td>T</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td>F</td>
-        <td>F</td>
-        <td>T</td>
-    </tr>
-</table>
-<div class="u-margin-bottom-medium">
-<p class="p__result--truth" id="nor">Result</p>
-</div>
-      
-      </div>
-    </section>
     <!-- Pop up for Random Values-->
     <section>
       <div>
